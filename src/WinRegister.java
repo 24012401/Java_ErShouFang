@@ -53,4 +53,20 @@ public class WinRegister extends JFrame {
         panel3.add(button2);
         this.add(panel3);
     }
+
+    public static void main(String[] args) {
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    WinRegister window = new WinRegister();
+                    window.setTitle("用户注册");
+                    window.setBounds(450, 200, 360, 270);
+                    window.setVisible(true);
+                    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+                } catch (Exception e) {
+                    e. printStackTrace();
+                }
+            }
+        });
+    }
 }
