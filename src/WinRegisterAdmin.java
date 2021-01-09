@@ -61,7 +61,7 @@ public class WinRegisterAdmin extends JFrame {
             public void run() {
                 try {
                     WinRegisterAdmin window = new WinRegisterAdmin();
-                    window.setTitle("注册管理员");
+                    window.setTitle("注册中介管理员");
                     window.setBounds(400, 200, 450, 350);
                     window.setVisible(true);
                     window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
