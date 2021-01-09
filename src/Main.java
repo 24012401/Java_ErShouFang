@@ -8,12 +8,13 @@ import java.sql.*;
  */
 
 public class Main {
-    public static void main(String[] args) {
-        WinRegister window = new WinRegister();
-        window.setTitle("用户注册");
+    public static void main(String[] args) throws SQLException {
+        WinRegisterMaiMai window = new WinRegisterMaiMai();
+        window.setTitle("注册普通买卖方");
         window.setBounds(450, 200, 360, 270);
         window.setVisible(true);
 //      window.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);  //释放当前窗口
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+
     }
 }
