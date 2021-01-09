@@ -3,7 +3,7 @@ import javax.swing.*;
 
 /**
  * author: 刘晓霞
- * function: 查询刚刚注册的用户的ID
+ * function: 查询刚刚注册的用户的ID (弃用)
  * time: 2021.01.09
  */
 

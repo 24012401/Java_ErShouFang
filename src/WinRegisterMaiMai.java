@@ -164,6 +164,12 @@ public class WinRegisterMaiMai extends JFrame implements ActionListener {
                 JOptionPane.showMessageDialog(null, "注册成功！");
             } catch (Exception exception) {
                 exception.printStackTrace();
+            } finally {
+                try {
+                    Link.result(connection, preparedStatement);
+                } catch (SQLException throwables) {
+                    throwables.printStackTrace();
+                }
             }
         }
     }

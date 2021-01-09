@@ -95,6 +95,12 @@ public class WinRegisterAdmin extends JFrame implements ActionListener{
                 judgePhone();
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
+            } finally {
+                try {
+                    Link.result(connection, preparedStatement);
+                } catch (SQLException throwables) {
+                    throwables.printStackTrace();
+                }
             }
         }
         if (e.getSource() == button1 && ok) {

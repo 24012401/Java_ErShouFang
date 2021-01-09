@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="011302d3-d5a6-4fd0-ab7f-51a2451b7801" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WinRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HandleLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HandleLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SelectID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SelectID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WinRegisterAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinRegisterAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WinRegisterMaiMai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinRegisterMaiMai.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WinRegisterSMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinRegisterSMan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
