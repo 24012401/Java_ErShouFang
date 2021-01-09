@@ -16,6 +16,7 @@ public class WinRegisterMaiMai extends JFrame implements ActionListener {
     // 手机号和身份证号的正则表达式
     public static final String REGEX_MOBILE = "^(1[3-9]\\d{9}$)";
     public static final String REGEX_CARD = "[1-9]{2}[0-9]{4}(19|20)[0-9]{2}" + "((0[1-9]{1})|(1[1-2]{1}))((0[1-9]{1})|([1-2]{1}[0-9]{1}|(3[0-1]{1})))" + "[0-9]{3}[0-9x]{1}";
+    public static final String REGEX_MAIL = "^([a-z0-9A-Z]+[-|_|\\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-zA-Z]{2,}$";
 
     JLabel label1, label2, label3, label4, label5, label6, label7;
     JTextField textField1, textField2, textField3, textField4;
@@ -139,6 +140,10 @@ public class WinRegisterMaiMai extends JFrame implements ActionListener {
             judgeSex(sex);
             judgePhone();
             judgeCard();
+            String mail = textField4.getText();
+            if (!mail.isEmpty()) {
+                judgeMail();
+            }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
@@ -195,7 +200,7 @@ public class WinRegisterMaiMai extends JFrame implements ActionListener {
         if (m.matches() == false) {
             ok = false;
             this.dispose();
-            JOptionPane.showMessageDialog(this, "非正常手机号，请重新填写！" + str, "警告信息", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "非正常手机号，请重新填写！", "警告信息", JOptionPane.WARNING_MESSAGE);
             newWin();
         }
     }
@@ -205,6 +210,18 @@ public class WinRegisterMaiMai extends JFrame implements ActionListener {
             ok = false;
             this.dispose();
             JOptionPane.showMessageDialog(this, "非正常身份证号，请重新填写！", "警告信息", JOptionPane.WARNING_MESSAGE);
+            newWin();
+        }
+    }
+
+    private void judgeMail() throws SQLException {
+        String mail = textField4.getText();
+        Pattern regex = Pattern.compile(REGEX_MAIL);
+        Matcher matcher = regex.matcher(mail);
+        if (matcher.matches() == false) {
+            ok = false;
+            this.dispose();
+            JOptionPane.showMessageDialog(this, "非正常邮箱，请重新填写！", "警告信息", JOptionPane.WARNING_MESSAGE);
             newWin();
         }
     }

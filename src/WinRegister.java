@@ -87,10 +87,15 @@ public class WinRegister extends JFrame implements ActionListener {
             try {
                 this.dispose();
                 connection = Link.getConnection();
-                String str = "insert into Users(账户类型,密码) values(?,?)";
+                String str = "insert into Users(账户类型,密码,是否同意该账户使用) values(?,?,?)";
+                String canUse = "true";
+                if (leixing == "中介业务员") {
+                    canUse = "false";
+                }
                 preparedStatement = connection.prepareStatement(str, Statement.RETURN_GENERATED_KEYS);
                 preparedStatement.setString(1, leixing);
                 preparedStatement.setString(2, passwordField1.getPassword().toString());
+                preparedStatement.setString(3, canUse);
                 preparedStatement.executeUpdate();
                 // 获取系统自动生成的id
                 id = preparedStatement.getGeneratedKeys();
