@@ -140,46 +140,38 @@ public class WinRegister extends JFrame implements ActionListener {
         if (new String(passwordField1.getText()).isEmpty()) {
             this.dispose();
             JOptionPane.showMessageDialog(this, "密码不能为空！", "警告信息", JOptionPane.WARNING_MESSAGE);
-            WinRegister winRegister = new WinRegister();
-            winRegister.setTitle("用户注册");
-            winRegister.setBounds(450, 200, 360, 270);
-            winRegister.setVisible(true);
-            winRegister.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+            newWin();
             return false;
         }
         // 判断确认密码是否为空
         if (new String(passwordField1.getText()).isEmpty()) {
             this.dispose();
             JOptionPane.showMessageDialog(this, "确认密码不能为空！", "警告信息", JOptionPane.WARNING_MESSAGE);
-            WinRegister winRegister = new WinRegister();
-            winRegister.setTitle("用户注册");
-            winRegister.setBounds(450, 200, 360, 270);
-            winRegister.setVisible(true);
-            winRegister.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+            newWin();
             return false;
         }
         // 判断两次密码是否相同
         if ((passwordField1.getText()).equals(passwordField2.getText()) == false) {
             JOptionPane.showMessageDialog(this, "两次密码不相同","警告消息",JOptionPane.WARNING_MESSAGE);
-            WinRegister winRegister = new WinRegister();
-            winRegister.setTitle("用户注册");
-            winRegister.setBounds(450, 200, 360, 270);
-            winRegister.setVisible(true);
-            winRegister.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+            newWin();
             return false;
         }
         return true;
+    }
+
+    private static void newWin() {
+        WinRegister winRegister = new WinRegister();
+        winRegister.setTitle("用户注册");
+        winRegister.setBounds(450, 200, 360, 270);
+        winRegister.setVisible(true);
+        winRegister.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
     }
 
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    WinRegister winRegister = new WinRegister();
-                    winRegister.setTitle("用户注册");
-                    winRegister.setBounds(450, 200, 360, 270);
-                    winRegister.setVisible(true);
-                    winRegister.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+                    newWin();
                 } catch (Exception e) {
                     e. printStackTrace();
                 }
