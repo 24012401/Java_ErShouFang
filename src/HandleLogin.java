@@ -3,7 +3,7 @@ import java.sql.*;
 
 /**
  * author: 刘晓霞
- * function: 管理用户登录
+ * function: 管理用户登录 （弃用）
  * time: 2021.01.09
  */
 

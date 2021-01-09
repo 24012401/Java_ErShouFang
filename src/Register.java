@@ -1,7 +1,7 @@
 
 /**
  * author: 刘晓霞
- * function: 用户注册类
+ * function: 用户注册类（弃用）
  * time: 2021.01.09
  */
 
