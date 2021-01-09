@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011302d3-d5a6-4fd0-ab7f-51a2451b7801" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/WinRegisterAdmin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WinRegisterSMan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WinRegisterMaiMai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinRegisterMaiMai.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterAdmin$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterAdmin$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterAdmin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterAdmin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WinRegisterAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinRegisterAdmin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.WinRegisterAdmin">
+  <component name="RunManager" selected="Application.WinRegisterSMan">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="Java_ErShouFang" />
@@ -95,12 +94,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WinRegisterSMan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WinRegisterSMan" />
+      <module name="Java_ErShouFang" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WinRegisterSMan" />
         <item itemvalue="Application.WinRegisterAdmin" />
         <item itemvalue="Application.WinRegisterMaiMai" />
         <item itemvalue="Application.WinRegister" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
