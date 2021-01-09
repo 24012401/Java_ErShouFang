@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="011302d3-d5a6-4fd0-ab7f-51a2451b7801" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WinRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WinRegisterMaiMai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinRegisterMaiMai.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
