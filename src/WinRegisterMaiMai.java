@@ -1,6 +1,12 @@
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * author: 刘晓霞
+ * function: 普通买卖方注册界面
+ * time: 2021.01.09
+ */
+
 public class WinRegisterMaiMai extends JFrame {
 
     JLabel label1, label2, label3, label4, label5, label6, label7;
