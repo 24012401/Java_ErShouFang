@@ -103,11 +103,11 @@ public class WinRegisterSMan extends JFrame {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    WinRegisterSMan window = new WinRegisterSMan();
-                    window.setTitle("注册中介业务员");
-                    window.setBounds(400, 200, 560, 500);
-                    window.setVisible(true);
-                    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+                    WinRegisterSMan winRegisterSMan = new WinRegisterSMan();
+                    winRegisterSMan.setTitle("注册中介业务员");
+                    winRegisterSMan.setBounds(400, 200, 560, 500);
+                    winRegisterSMan.setVisible(true);
+                    winRegisterSMan.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
                 } catch (Exception e) {
                     e. printStackTrace();
                 }
