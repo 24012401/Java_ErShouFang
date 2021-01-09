@@ -3,7 +3,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
-import javax.swing.*;
 
 /**
  * author: 刘晓霞
@@ -18,7 +17,8 @@ public class WinRegister extends JFrame implements ActionListener {
     private JPanel panel1, panel2, panel3, panel4;
     private JButton button1, button2;
     Connection connection;
-    Statement statement;
+    PreparedStatement preparedStatement;
+    ResultSet id;
 
     public WinRegister() {
 
@@ -82,26 +82,37 @@ public class WinRegister extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         String leixing = comboBox.getSelectedItem().toString();
-        judgePassword();
-        if (e.getSource() == button1) {
+        boolean ok = judgePassword();
+        if (e.getSource() == button1 && ok) {
             try {
                 this.dispose();
+                connection = Link.getConnection();
+                String str = "insert into Users(账户类型,密码) values(?,?)";
+                preparedStatement = connection.prepareStatement(str, Statement.RETURN_GENERATED_KEYS);
+                preparedStatement.setString(1, leixing);
+                preparedStatement.setString(2, passwordField1.getPassword().toString());
+                preparedStatement.executeUpdate();
+                // 获取系统自动生成的id
+                id = preparedStatement.getGeneratedKeys();
+                id.next();
+                Long ID = id.getLong(1);
+                JOptionPane.showMessageDialog(null, "注册成功!您的账号ID为: " + ID);
                 if (leixing == "普通买卖方") {
-                    WinRegisterMaiMai winRegisterMaiMai = new WinRegisterMaiMai();
+                    WinRegisterMaiMai winRegisterMaiMai = new WinRegisterMaiMai(ID);
                     winRegisterMaiMai.setTitle("注册普通买卖方");
                     winRegisterMaiMai.setBounds(400, 200, 450, 350);
                     winRegisterMaiMai.setVisible(true);
                     winRegisterMaiMai.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
                 }
                 else if (leixing == "中介业务员") {
-                    WinRegisterSMan winRegisterSMan = new WinRegisterSMan();
+                    WinRegisterSMan winRegisterSMan = new WinRegisterSMan(ID);
                     winRegisterSMan.setTitle("注册中介业务员");
                     winRegisterSMan.setBounds(400, 200, 560, 500);
                     winRegisterSMan.setVisible(true);
                     winRegisterSMan.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
                 }
                 else if (leixing == "中介管理员") {
-                    WinRegisterAdmin winRegisterAdmin = new WinRegisterAdmin();
+                    WinRegisterAdmin winRegisterAdmin = new WinRegisterAdmin(ID);
                     winRegisterAdmin.setTitle("注册中介管理员");
                     winRegisterAdmin.setBounds(400, 200, 450, 350);
                     winRegisterAdmin.setVisible(true);
@@ -110,12 +121,16 @@ public class WinRegister extends JFrame implements ActionListener {
             } catch (Exception e1) {
                 e1.printStackTrace();
             } finally {
-
+                try {
+                    Link.result(connection, preparedStatement);
+                } catch (SQLException throwables) {
+                    throwables.printStackTrace();
+                }
             }
         }
     }
 
-    private void judgePassword() {
+    private boolean judgePassword() {
         // 判断密码是否为空
         if (new String(passwordField1.getText()).isEmpty()) {
             this.dispose();
@@ -125,7 +140,7 @@ public class WinRegister extends JFrame implements ActionListener {
             winRegister.setBounds(450, 200, 360, 270);
             winRegister.setVisible(true);
             winRegister.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
-            return;
+            return false;
         }
         // 判断确认密码是否为空
         if (new String(passwordField1.getText()).isEmpty()) {
@@ -136,18 +151,19 @@ public class WinRegister extends JFrame implements ActionListener {
             winRegister.setBounds(450, 200, 360, 270);
             winRegister.setVisible(true);
             winRegister.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
-            return;
+            return false;
         }
         // 判断两次密码是否相同
-        if (passwordField1.equals(passwordField2)) {
+        if ((passwordField1.getText()).equals(passwordField2.getText()) == false) {
             JOptionPane.showMessageDialog(this, "两次密码不相同","警告消息",JOptionPane.WARNING_MESSAGE);
             WinRegister winRegister = new WinRegister();
             winRegister.setTitle("用户注册");
             winRegister.setBounds(450, 200, 360, 270);
             winRegister.setVisible(true);
             winRegister.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
-            return;
+            return false;
         }
+        return true;
     }
 
     public static void main(String[] args) {

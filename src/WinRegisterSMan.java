@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.sql.ResultSet;
 
 /**
  * author: 刘晓霞
@@ -11,20 +12,22 @@ public class WinRegisterSMan extends JFrame {
 
     JLabel label1, label2, label3, label4, label5, label6, label7;
     JPanel panel1, panel2, panel3, panel4, panel5, panel6, panel7, panel8, panel9;
-    JTextField textField1, textField2, textField3;
+    JTextField textField, textField1, textField2, textField3;
     JRadioButton radioButtonM, radioButtonF;
     JTextArea textArea;
     JButton button1, button2;
     JScrollPane scrollPane;
 
-    public WinRegisterSMan() {
+    public WinRegisterSMan(Long id) {
+
+//        this.setLayout(new GridLayout(7, 1));
         this.setLayout(new GridLayout(8, 1));
 
         //int id = SelectID.getId();
         label1 = new JLabel("业务员ID:");
         label1.setFont(new Font("宋体", Font.PLAIN, 20));
-        //label2 = new JLabel(String.valueOf(id));
-        label2 = new JLabel("id");
+        label2 = new JLabel(String.valueOf(id));
+//        label2 = new JLabel("id");
         label2.setFont(new Font("宋体", Font.PLAIN, 20));
         panel1 = new JPanel(new FlowLayout(FlowLayout.LEFT));
         panel1.add(label1);
@@ -63,7 +66,7 @@ public class WinRegisterSMan extends JFrame {
 
         label6 = new JLabel("  工  号: ");
         label6.setFont(new Font("宋体", Font.PLAIN, 20));
-        textField3 = new JTextField(18);
+        textField3 = new JTextField(8);
         textField3.setFont(new Font("宋体", Font.PLAIN, 20));
         panel5 = new JPanel(new FlowLayout(FlowLayout.LEFT));
         panel5.add(label6);
@@ -99,19 +102,20 @@ public class WinRegisterSMan extends JFrame {
         panel8.add(button2);
         this.add(panel8);
     }
-    public static void main(String[] args) {
-        EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                try {
-                    WinRegisterSMan winRegisterSMan = new WinRegisterSMan();
-                    winRegisterSMan.setTitle("注册中介业务员");
-                    winRegisterSMan.setBounds(400, 200, 560, 500);
-                    winRegisterSMan.setVisible(true);
-                    winRegisterSMan.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
-                } catch (Exception e) {
-                    e. printStackTrace();
-                }
-            }
-        });
-    }
+
+//    public static void main(String[] args) {
+//        EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                try {
+//                    WinRegisterSMan winRegisterSMan = new WinRegisterSMan();
+//                    winRegisterSMan.setTitle("注册中介业务员");
+//                    winRegisterSMan.setBounds(400, 200, 560, 500);
+//                    winRegisterSMan.setVisible(true);
+//                    winRegisterSMan.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+//                } catch (Exception e) {
+//                    e. printStackTrace();
+//                }
+//            }
+//        });
+//    }
 }

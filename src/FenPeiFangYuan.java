@@ -12,11 +12,10 @@ import java.sql.SQLException;
 
 public class FenPeiFangYuan {
     public static void fenPeiFangYuan(String HouseId, String SaleManId) {
-        Link link = new Link();
         PreparedStatement preparedStatement = null;
 
         try {
-            Connection con = link.linker();
+            Connection con = Link.getConnection();
             preparedStatement = con.prepareStatement("update House set 客户ID = '" + SaleManId + "' where '"+ HouseId + "'");
             ResultSet result1 = preparedStatement.executeQuery();
             if(result1.wasNull())

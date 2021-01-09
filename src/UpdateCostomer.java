@@ -10,10 +10,9 @@ import javax.swing.*;
 public class UpdateCostomer {
     public static void getId(String str, String shuxing, String zhi) {
         PreparedStatement preparedStatement = null;
-        Link link = new Link();
 
         try {
-            Connection con = link.linker();
+            Connection con = Link.getConnection();
             preparedStatement = con.prepareStatement("update Custom set" +shuxing+ "= '" +zhi+"' where 客户ID = '"+str+"'" );
             ResultSet result1 = preparedStatement.executeQuery();
             if(result1.wasNull())
