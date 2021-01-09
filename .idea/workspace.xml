@@ -3,7 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="011302d3-d5a6-4fd0-ab7f-51a2451b7801" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/FenPeiFangYuan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/FenPeiFangYuan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/HandleInsertData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/Link.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/Link.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/SelectID.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/SelectID.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/UpdateCostomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/UpdateCostomer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FenPeiFangYuan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FenPeiFangYuan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HandleInsertData.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Link.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SelectID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SelectID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UpdateCostomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UpdateCostomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WinRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinRegister.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WinRegisterAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinRegisterAdmin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WinRegisterMaiMai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinRegisterMaiMai.java" afterDir="false" />
@@ -50,7 +63,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.capture" />
   </component>
   <component name="RunManager" selected="Application.WinRegister">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -105,9 +118,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.WinRegister" />
+        <item itemvalue="Application.WinRegisterMaiMai" />
         <item itemvalue="Application.WinRegisterSMan" />
         <item itemvalue="Application.WinRegisterAdmin" />
-        <item itemvalue="Application.WinRegisterMaiMai" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -134,6 +147,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="com.microsoft.sqlserver.jdbc.SQLServerException" package="com.microsoft.sqlserver.jdbc" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -8,14 +8,23 @@ import java.sql.*;
  */
 
 public class Link {
-    String sql_url = "jdbc:sqlserver://localhost:1433;integratedSecurity=true;DatabaseName=House";
-    String name_ = "log1";
-    String password_ = "123";
-    Connection con;
+    public static String sql_url = "jdbc:sqlserver://localhost:1433;integratedSecurity=true;DatabaseName=House";
+    public static String name_ = "log1";
+    public static String password_ = "123";
+    public static Connection connection;
 
-    public Connection linker() throws Exception {
+    public static Connection getConnection() throws Exception {
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        con = DriverManager.getConnection(sql_url, name_, password_);
-        return con;
+        connection = DriverManager.getConnection(sql_url, name_, password_);
+        return connection;
+    }
+
+    public static void result(Connection connection, Statement statement) throws SQLException {
+        connection.close();
+        statement.close();
+    }
+    public static void result(Connection connection, PreparedStatement preparedStatement) throws SQLException {
+        connection.close();
+        preparedStatement.close();
     }
 }

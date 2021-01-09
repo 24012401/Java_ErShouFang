@@ -1,5 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 
 /**
  * author: 刘晓霞
@@ -13,16 +16,18 @@ public class WinRegisterAdmin extends JFrame {
     JPanel panel1, panel2, panel3, panel4;
     JTextField textField1, textField2;
     JButton button1, button2;
+    Long ID;
 
-    public WinRegisterAdmin() {
-
+    public WinRegisterAdmin(Long id) {
+        ID = id;
+//        this.setLayout(new GridLayout(3, 1));
         this.setLayout(new GridLayout(4, 1));
 
         //int id = SelectID.getId();
         label1 = new JLabel("管理员ID:");
         label1.setFont(new Font("宋体", Font.PLAIN, 20));
-        //label2 = new JLabel(String.valueOf(id));
-        label2 = new JLabel("id");
+        label2 = new JLabel(String.valueOf(id));
+//        label2 = new JLabel("id");
         label2.setFont(new Font("宋体", Font.PLAIN, 20));
         panel1 = new JPanel(new FlowLayout(FlowLayout.LEFT));
         panel1.add(label1);
@@ -55,20 +60,38 @@ public class WinRegisterAdmin extends JFrame {
         panel4.add(button1);
         panel4.add(button2);
         this.add(panel4);
+
+        awtEvent(); //创建监听
     }
-    public static void main(String[] args) {
-        EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                try {
-                    WinRegisterAdmin winRegisterAdmin = new WinRegisterAdmin();
-                    winRegisterAdmin.setTitle("注册中介管理员");
-                    winRegisterAdmin.setBounds(400, 200, 450, 350);
-                    winRegisterAdmin.setVisible(true);
-                    winRegisterAdmin.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
-                } catch (Exception e) {
-                    e. printStackTrace();
-                }
+
+    private void awtEvent() {
+        // 注册按钮监听
+        button1.addActionListener((ActionListener) this);
+        // 取消按钮监听
+        button2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
             }
         });
     }
+
+
+
+
+//    public static void main(String[] args) {
+//        EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                try {
+//                    WinRegisterAdmin winRegisterAdmin = new WinRegisterAdmin();
+//                    winRegisterAdmin.setTitle("注册中介管理员");
+//                    winRegisterAdmin.setBounds(400, 200, 450, 350);
+//                    winRegisterAdmin.setVisible(true);
+//                    winRegisterAdmin.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+//                } catch (Exception e) {
+//                    e. printStackTrace();
+//                }
+//            }
+//        });
+//    }
 }

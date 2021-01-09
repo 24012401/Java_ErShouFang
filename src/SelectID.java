@@ -10,11 +10,10 @@ import javax.swing.*;
 public class SelectID {
     public static int getId() throws SQLException {
         PreparedStatement preparedStatement = null;
-        Link link = new Link();
         ResultSet result1 = null;
 
         try {
-            Connection con = link.linker();
+            Connection con = Link.getConnection();
             preparedStatement = con.prepareStatement("select IDENT_CURRENT('Users')");
             result1 = preparedStatement.executeQuery();
             if (result1.wasNull())
