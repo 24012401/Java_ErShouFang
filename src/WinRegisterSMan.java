@@ -45,7 +45,7 @@ public class WinRegisterSMan extends JFrame implements ActionListener {
 
         label3 = new JLabel("业务员姓名:");
         label3.setFont(new Font("宋体", Font.PLAIN, 20));
-        textField1 = new JTextField(10);
+        textField1 = new JTextField(20);
         textField1.setFont(new Font("宋体", Font.PLAIN, 20));
         panel2 = new JPanel(new FlowLayout(FlowLayout.LEFT));
         panel2.add(label3);
@@ -66,7 +66,7 @@ public class WinRegisterSMan extends JFrame implements ActionListener {
 
         label5 = new JLabel("业务员电话: ");
         label5.setFont(new Font("宋体", Font.PLAIN, 20));
-        textField2 = new JTextField(11);
+        textField2 = new JTextField(20);
         textField2.setFont(new Font("宋体", Font.PLAIN, 20));
         panel4 = new JPanel(new FlowLayout(FlowLayout.LEFT));
         panel4.add(label5);
@@ -75,7 +75,7 @@ public class WinRegisterSMan extends JFrame implements ActionListener {
 
         label6 = new JLabel("  工  号: ");
         label6.setFont(new Font("宋体", Font.PLAIN, 20));
-        textField3 = new JTextField(8);
+        textField3 = new JTextField(20);
         textField3.setFont(new Font("宋体", Font.PLAIN, 20));
         panel5 = new JPanel(new FlowLayout(FlowLayout.LEFT));
         panel5.add(label6);
