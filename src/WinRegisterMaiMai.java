@@ -32,7 +32,7 @@ public class WinRegisterMaiMai extends JFrame {
 
         label3 = new JLabel("  姓名: ");
         label3.setFont(new Font("宋体", Font.PLAIN, 20));
-        textField1 = new JTextField(6);
+        textField1 = new JTextField(10);
         textField1.setFont(new Font("宋体", Font.PLAIN, 20));
         panel2 = new JPanel(new FlowLayout(FlowLayout.LEFT));
         panel2.add(label3);
