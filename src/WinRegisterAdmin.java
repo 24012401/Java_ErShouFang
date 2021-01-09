@@ -82,6 +82,7 @@ public class WinRegisterAdmin extends JFrame implements ActionListener{
         });
     }
 
+    boolean ok = true;
     public void actionPerformed(ActionEvent e) {
         try {
             judgeName();
@@ -96,7 +97,7 @@ public class WinRegisterAdmin extends JFrame implements ActionListener{
                 throwables.printStackTrace();
             }
         }
-        if (e.getSource() == button1) {
+        if (e.getSource() == button1 && ok) {
             try {
                 this.dispose();
                 connection = Link.getConnection();
@@ -116,6 +117,7 @@ public class WinRegisterAdmin extends JFrame implements ActionListener{
     private void judgeName() throws SQLException {
         String str = textField1.getText();
         if (str.isEmpty()) {
+            ok = false;
             this.dispose();
             JOptionPane.showMessageDialog(this, "名字不能为空，请重新填写！", "警告信息", JOptionPane.WARNING_MESSAGE);
             newWin();
@@ -126,6 +128,7 @@ public class WinRegisterAdmin extends JFrame implements ActionListener{
         Pattern p = Pattern.compile(REGEX_MOBILE);
         Matcher m = p.matcher(str);
         if (m.matches() == false) {
+            ok = false;
             this.dispose();
             JOptionPane.showMessageDialog(this, "非正常手机号，请重新填写！" + str, "警告信息", JOptionPane.WARNING_MESSAGE);
             newWin();

@@ -130,6 +130,7 @@ public class WinRegisterMaiMai extends JFrame implements ActionListener {
         });
     }
 
+    boolean ok = true;
     public void actionPerformed(ActionEvent e) {
         // 获取性别
         String sex = null;
@@ -142,7 +143,7 @@ public class WinRegisterMaiMai extends JFrame implements ActionListener {
             throwables.printStackTrace();
         }
 
-        if (e.getSource() == button1) {
+        if (e.getSource() == button1 && ok) {
             try {
                 this.dispose();
                 connection = Link.getConnection();
@@ -165,6 +166,7 @@ public class WinRegisterMaiMai extends JFrame implements ActionListener {
     private void judgeName() throws SQLException {
         String str = textField1.getText();
         if (str.isEmpty()) {
+            ok = false;
             this.dispose();
             JOptionPane.showMessageDialog(this, "名字不能为空，请重新填写！", "警告信息", JOptionPane.WARNING_MESSAGE);
             newWin();
@@ -179,6 +181,7 @@ public class WinRegisterMaiMai extends JFrame implements ActionListener {
             sex = "男";
         }
         if (sex == null) {
+            ok = false;
             this.dispose();
             JOptionPane.showMessageDialog(this, "性别不能为空，请重新选择！", "警告信息", JOptionPane.WARNING_MESSAGE);
             newWin();
@@ -190,6 +193,7 @@ public class WinRegisterMaiMai extends JFrame implements ActionListener {
         Pattern p = Pattern.compile(REGEX_MOBILE);
         Matcher m = p.matcher(str);
         if (m.matches() == false) {
+            ok = false;
             this.dispose();
             JOptionPane.showMessageDialog(this, "非正常手机号，请重新填写！" + str, "警告信息", JOptionPane.WARNING_MESSAGE);
             newWin();
@@ -198,6 +202,7 @@ public class WinRegisterMaiMai extends JFrame implements ActionListener {
     private void judgeCard() throws SQLException {
         String str = textField3.getText();
         if (str.matches(REGEX_CARD) == false) {
+            ok = false;
             this.dispose();
             JOptionPane.showMessageDialog(this, "非正常身份证号，请重新填写！", "警告信息", JOptionPane.WARNING_MESSAGE);
             newWin();
