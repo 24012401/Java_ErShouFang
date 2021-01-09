@@ -210,7 +210,7 @@ public class WinRegisterSMan extends JFrame implements ActionListener {
         if (m.matches() == false) {
             ok = false;
             this.dispose();
-            JOptionPane.showMessageDialog(this, "非正常手机号，请重新填写！" + str, "警告信息", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "非正常手机号，请重新填写！", "警告信息", JOptionPane.WARNING_MESSAGE);
             newWin();
         }
     }
