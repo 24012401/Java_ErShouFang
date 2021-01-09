@@ -92,11 +92,11 @@ public class WinRegisterMaiMai extends JFrame {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    WinRegisterMaiMai window = new WinRegisterMaiMai();
-                    window.setTitle("注册普通买卖方");
-                    window.setBounds(400, 200, 450, 350);
-                    window.setVisible(true);
-                    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+                    WinRegisterMaiMai winRegisterMaiMai = new WinRegisterMaiMai();
+                    winRegisterMaiMai.setTitle("注册普通买卖方");
+                    winRegisterMaiMai.setBounds(400, 200, 450, 350);
+                    winRegisterMaiMai.setVisible(true);
+                    winRegisterMaiMai.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
                 } catch (Exception e) {
                     e. printStackTrace();
                 }
