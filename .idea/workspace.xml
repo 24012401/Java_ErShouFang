@@ -3,24 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="011302d3-d5a6-4fd0-ab7f-51a2451b7801" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/FenPeiFangYuan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/FenPeiFangYuan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/HandleInsertData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/Link.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/Link.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/SelectID.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/SelectID.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/UpdateCostomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/UpdateCostomer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FenPeiFangYuan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FenPeiFangYuan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HandleInsertData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Link.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SelectID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SelectID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UpdateCostomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UpdateCostomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WinRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinRegister.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WinRegisterAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinRegisterAdmin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WinRegisterMaiMai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinRegisterMaiMai.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WinRegisterSMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinRegisterSMan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
