@@ -2,6 +2,7 @@ import java.awt.*;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Vector;
 import javax.swing.table.DefaultTableModel;
@@ -122,6 +123,23 @@ public class WinSelectCustomer extends JFrame {
 //                JOptionPane.showMessageDialog(null, str);
 //            }
 //        });
+
+        // 修改按钮
+        button3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    WinUpdateCustomer winUpdateCustomer = new WinUpdateCustomer();
+                    winUpdateCustomer.setTitle("修改客户信息");
+                    winUpdateCustomer.setBounds(400, 200, 450, 350);
+                    winUpdateCustomer.setVisible(true);
+                    winUpdateCustomer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+                } catch (SQLException throwables) {
+                    throwables.printStackTrace();
+                }
+
+            }
+        });
 
         // 查询按钮
         button1.addActionListener(new ActionListener() {
