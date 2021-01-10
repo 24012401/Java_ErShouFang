@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011302d3-d5a6-4fd0-ab7f-51a2451b7801" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/WinMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UpdateCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WinUpdateCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/FenPeiFangYuan$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/FenPeiFangYuan$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/FenPeiFangYuan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/FenPeiFangYuan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/Link.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/Link.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/UpdateCostomer.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FenPeiFangYuan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FenPeiFangYuan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Link.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UpdateCostomer.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +57,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.capture" />
   </component>
-  <component name="RunManager" selected="Application.WinMain">
+  <component name="RunManager" selected="Application.FenPeiFangYuan">
     <configuration name="FenPeiFangYuan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FenPeiFangYuan" />
       <module name="Java_ErShouFang" />
@@ -96,8 +102,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WinMain" />
         <item itemvalue="Application.FenPeiFangYuan" />
+        <item itemvalue="Application.WinMain" />
         <item itemvalue="Application.WinRegister" />
         <item itemvalue="Application.WinRegisterMaiMai" />
         <item itemvalue="Application.WinRegisterSMan" />
