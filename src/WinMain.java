@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
 
@@ -29,9 +30,36 @@ public class WinMain extends JFrame {
         panel1.add(label);
         this.add(panel1);
 
-
-
+        awtEvent(); //创建监听
     }
+
+    private void awtEvent() {
+        // 注册按钮监听
+        button1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                WinRegister winRegister = new WinRegister();
+                winRegister.setTitle("用户注册");
+                winRegister.setBounds(450, 200, 360, 270);
+                winRegister.setVisible(true);
+                winRegister.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+            }
+        });
+        // 登录按钮监听
+        button2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+
+
+
+
+
+            }
+        });
+    }
+
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
             public void run() {

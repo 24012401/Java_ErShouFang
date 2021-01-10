@@ -1,3 +1,8 @@
+/**
+ * author: 刘晓霞
+ * function: 客户类：客户基本信息功能实现
+ * time: 2021.01.10
+ */
 public class Customer {
     private String id;
     private String name;

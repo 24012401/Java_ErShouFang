@@ -3,6 +3,12 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * author: 刘晓霞
+ * function: 查询客户信息功能实现
+ * time: 2021.01.10
+ */
+
 public class SelectCustomer {
     List<Customer> list1 = new ArrayList<Customer>();
     Connection connection;
