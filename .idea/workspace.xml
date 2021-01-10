@@ -3,18 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="011302d3-d5a6-4fd0-ab7f-51a2451b7801" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinMain$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinMain$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Link.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SelectCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SelectCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WinMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WinRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/SelectCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/SelectCustomer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WinRegisterAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinRegisterAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WinRegisterMaiMai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinRegisterMaiMai.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WinRegisterSMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinRegisterSMan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +56,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.capture" />
   </component>
-  <component name="RunManager" selected="Application.WinMain">
+  <component name="RunManager" selected="Application.WinSelectCustomer">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java_ErShouFang" />
@@ -109,8 +101,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WinMain" />
         <item itemvalue="Application.WinSelectCustomer" />
+        <item itemvalue="Application.WinMain" />
         <item itemvalue="Application.WinUpdateCustomer" />
         <item itemvalue="Application.WinRegister" />
         <item itemvalue="Application.Main" />
