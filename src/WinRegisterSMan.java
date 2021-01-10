@@ -150,12 +150,11 @@ public class WinRegisterSMan extends JFrame implements ActionListener {
     }
 
     boolean ok = true;
+    String sex = null;
     public void actionPerformed(ActionEvent e) {
-        // 获取性别
-        String sex = null;
         try {
             judgeName();
-            judgeSex(sex);
+            judgeSex();
             judgePhone();
             judgeCard();
             judgeIntroduction();
@@ -199,7 +198,7 @@ public class WinRegisterSMan extends JFrame implements ActionListener {
         }
     }
 
-    private void judgeSex(String sex) throws SQLException {
+    private void judgeSex() throws SQLException {
         if (radioButtonF.isSelected()) {
             sex = "女";
         }
