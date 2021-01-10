@@ -13,6 +13,14 @@ public class Link {
     public static String password_ = "123";
     public static Connection connection;
 
+    static {
+        try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static Connection getConnection() throws Exception {
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         connection = DriverManager.getConnection(sql_url, name_, password_);
