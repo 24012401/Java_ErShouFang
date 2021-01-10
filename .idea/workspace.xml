@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011302d3-d5a6-4fd0-ab7f-51a2451b7801" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UpdateCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WinUpdateCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SelectCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WinSelectCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/FenPeiFangYuan$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/FenPeiFangYuan$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/FenPeiFangYuan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/FenPeiFangYuan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/Link.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/Link.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/UpdateCostomer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FenPeiFangYuan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FenPeiFangYuan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Link.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UpdateCostomer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/UpdateCustomer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinUpdateCustomer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinUpdateCustomer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UpdateCustomer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WinUpdateCustomer.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +40,15 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1mgc9QG3VbqGYhSqg4Ihym71PGU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -57,9 +58,16 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.capture" />
   </component>
-  <component name="RunManager" selected="Application.FenPeiFangYuan">
+  <component name="RunManager" selected="Application.WinSelectCustomer">
     <configuration name="FenPeiFangYuan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FenPeiFangYuan" />
+      <module name="Java_ErShouFang" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java_ErShouFang" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -86,15 +94,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WinRegisterMaiMai" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WinRegisterMaiMai" />
-      <module name="Java_ErShouFang" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WinRegisterSMan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WinRegisterSMan" />
+    <configuration name="WinSelectCustomer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WinSelectCustomer" />
       <module name="Java_ErShouFang" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,11 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WinSelectCustomer" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.FenPeiFangYuan" />
         <item itemvalue="Application.WinMain" />
         <item itemvalue="Application.WinRegister" />
-        <item itemvalue="Application.WinRegisterMaiMai" />
-        <item itemvalue="Application.WinRegisterSMan" />
       </list>
     </recent_temporary>
   </component>
@@ -132,6 +133,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
