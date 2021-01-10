@@ -7,11 +7,11 @@ import java.util.regex.Pattern;
 
 /**
  * author: 刘晓霞
- * function: 普通买卖方注册界面
- * time: 2021.01.09
+ * function: 修改客户信息
+ * time: 2021.01.10
  */
 
-public class WinRegisterMaiMai extends JFrame implements ActionListener {
+public class WinUpdateCustomer extends JFrame implements ActionListener {
 
     // 手机号和身份证号的正则表达式
     public static final String REGEX_MOBILE = "^(1[3-9]\\d{9}$)";
@@ -19,26 +19,24 @@ public class WinRegisterMaiMai extends JFrame implements ActionListener {
     public static final String REGEX_MAIL = "^([a-z0-9A-Z]+[-|_|\\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-zA-Z]{2,}$";
 
     JLabel label1, label2, label3, label4, label5, label6, label7;
-    JTextField textField1, textField2, textField3, textField4;
+    JTextField textField, textField1, textField2, textField3, textField4;
     JPanel panel1, panel2, panel3, panel4, panel5, panel6, panel7;
     JRadioButton radioButtonM, radioButtonF;
     JButton button1, button2;
     Connection connection;
     PreparedStatement preparedStatement;
-    Long ID;
 
-    public WinRegisterMaiMai(Long id) throws SQLException {
-        ID = id;
+    public WinUpdateCustomer() throws SQLException {
 //        this.setLayout(new GridLayout(6, 1));
         this.setLayout(new GridLayout(7, 1));
         label1 = new JLabel("客户ID:");
         label1.setFont(new Font("宋体", Font.PLAIN, 20));
-        label2 = new JLabel(id.toString());
+        textField = new JTextField(10);
 //        label2 = new JLabel(String.valueOf(id));
-        label2.setFont(new Font("宋体", Font.PLAIN, 20));
+        textField.setFont(new Font("宋体", Font.PLAIN, 20));
         panel1 = new JPanel(new FlowLayout(FlowLayout.LEFT));
         panel1.add(label1);
-        panel1.add(label2);
+        panel1.add(textField);
         this.add(panel1);
 
         label3 = new JLabel("  姓名: ");
@@ -89,7 +87,7 @@ public class WinRegisterMaiMai extends JFrame implements ActionListener {
         panel6.add(textField4);
         this.add(panel6);
 
-        button1 = new JButton("注册");
+        button1 = new JButton("修改");
         button1.setFont(new Font("宋体", Font.PLAIN, 20));
         button2 = new JButton("取消");
         button2.setFont(new Font("宋体", Font.PLAIN, 20));
@@ -134,8 +132,9 @@ public class WinRegisterMaiMai extends JFrame implements ActionListener {
     boolean ok = true;
     String sex = null;
     public void actionPerformed(ActionEvent e) {
-        // 获取性别
+
         try {
+            judegeID();
             judgeName();
             judgeSex();
             judgePhone();
@@ -146,22 +145,24 @@ public class WinRegisterMaiMai extends JFrame implements ActionListener {
             }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
+        } catch (Exception exception) {
+            exception.printStackTrace();
         }
 
         if (e.getSource() == button1 && ok) {
             try {
                 this.dispose();
                 connection = Link.getConnection();
-                String str = "insert into Customer(客户ID,姓名,性别,电话,身份证号,邮箱) values(?,?,?,?,?,?)";
+                String str = "update Customer set 姓名=?,性别=?,电话=?,身份证号=?,邮箱=? where 客户ID=?";
                 preparedStatement = connection.prepareStatement(str, Statement.RETURN_GENERATED_KEYS);
-                preparedStatement.setString(1, ID.toString());
-                preparedStatement.setString(2, textField1.getText());
-                preparedStatement.setString(3, sex);
-                preparedStatement.setString(4, textField2.getText());
-                preparedStatement.setString(5, textField3.getText());
-                preparedStatement.setString(6, textField4.getText());
+                preparedStatement.setString(1, textField1.getText());
+                preparedStatement.setString(2, sex);
+                preparedStatement.setString(3, textField2.getText());
+                preparedStatement.setString(4, textField3.getText());
+                preparedStatement.setString(5, textField4.getText());
+                preparedStatement.setString(6, textField.getText());
                 preparedStatement.executeQuery();
-                JOptionPane.showMessageDialog(null, "注册成功！");
+                JOptionPane.showMessageDialog(null, "修改成功！");
             } catch (Exception exception) {
                 exception.printStackTrace();
             } finally {
@@ -171,6 +172,24 @@ public class WinRegisterMaiMai extends JFrame implements ActionListener {
                     throwables.printStackTrace();
                 }
             }
+        }
+    }
+
+    private void judegeID() throws Exception {
+        try{
+            Connection con = Link.getConnection();
+            String str = "Select 姓名 from Customer where 客户ID = ?";
+            PreparedStatement ps = con.prepareStatement(str);
+            ps.setString(1, textField.getText());
+            ResultSet rs = ps.executeQuery();
+            if (! rs.next()) {
+                ok = false;
+                this.dispose();
+                JOptionPane.showMessageDialog(this, "无此客户，请重新输入！", "警告信息", JOptionPane.WARNING_MESSAGE);
+                newWin();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -232,26 +251,26 @@ public class WinRegisterMaiMai extends JFrame implements ActionListener {
     }
 
     private void newWin() throws SQLException {
-        WinRegisterMaiMai winRegisterMaiMai = new WinRegisterMaiMai(ID);
-        winRegisterMaiMai.setTitle("注册普通买卖方");
-        winRegisterMaiMai.setBounds(400, 200, 450, 350);
-        winRegisterMaiMai.setVisible(true);
-        winRegisterMaiMai.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+        WinUpdateCustomer winUpdateCustomer = new WinUpdateCustomer();
+        winUpdateCustomer.setTitle("修改客户信息");
+        winUpdateCustomer.setBounds(400, 200, 450, 350);
+        winUpdateCustomer.setVisible(true);
+        winUpdateCustomer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
     }
 
-//    public static void main(String[] args) {
-//        EventQueue.invokeLater(new Runnable() {
-//            public void run() {
-//                try {
-//                    WinRegisterMaiMai winRegisterMaiMai = new WinRegisterMaiMai(ID);
-//                    winRegisterMaiMai.setTitle("注册普通买卖方");
-//                    winRegisterMaiMai.setBounds(400, 200, 450, 350);
-//                    winRegisterMaiMai.setVisible(true);
-//                    winRegisterMaiMai.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
-//                } catch (Exception e) {
-//                    e. printStackTrace();
-//                }
-//            }
-//        });
-//    }
+    public static void main(String[] args) {
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    WinUpdateCustomer winUpdateCustomer = new WinUpdateCustomer();
+                    winUpdateCustomer.setTitle("修改客户信息");
+                    winUpdateCustomer.setBounds(400, 200, 450, 350);
+                    winUpdateCustomer.setVisible(true);
+                    winUpdateCustomer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+                } catch (Exception e) {
+                    e. printStackTrace();
+                }
+            }
+        });
+    }
 }
