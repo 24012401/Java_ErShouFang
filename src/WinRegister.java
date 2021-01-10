@@ -76,6 +76,11 @@ public class WinRegister extends JFrame implements ActionListener {
             @Override
             public void actionPerformed(ActionEvent e) {
                 dispose();
+                WinMain winMain = new WinMain();
+                winMain.setTitle("主界面");
+                winMain.setBounds(450, 200, 800, 500);
+                winMain.setVisible(true);
+                winMain.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
             }
         });
     }

@@ -140,6 +140,11 @@ public class WinRegisterSMan extends JFrame implements ActionListener {
             @Override
             public void actionPerformed(ActionEvent e) {
                 dispose();
+                WinRegister winRegister = new WinRegister();
+                winRegister.setTitle("用户注册");
+                winRegister.setBounds(450, 200, 360, 270);
+                winRegister.setVisible(true);
+                winRegister.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
             }
         });
     }

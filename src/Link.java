@@ -3,7 +3,7 @@ import java.sql.*;
 
 /**
  * author: 刘晓霞
- * function: 连接数据库库，返回 Connection 类的对象
+ * function: 连接数据库库，返回 Connection 类的对象，关闭connection、statement
  * time: 2021.01.09
  */
 
