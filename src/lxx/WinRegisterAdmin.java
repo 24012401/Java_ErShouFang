@@ -1,5 +1,7 @@
 package lxx;
 
+import zhw.view.LoginTest;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -115,6 +117,8 @@ public class WinRegisterAdmin extends JFrame implements ActionListener{
                 preparedStatement.setString(3, textField2.getText());
                 preparedStatement.executeQuery();
                 JOptionPane.showMessageDialog(null, "注册成功！");
+                LoginTest loginTest = new LoginTest();
+                loginTest.setVisible(true);
             } catch (Exception exception) {
                 exception.printStackTrace();
             } finally {
