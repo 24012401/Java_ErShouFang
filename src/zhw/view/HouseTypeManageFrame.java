@@ -43,6 +43,7 @@ public class HouseTypeManageFrame extends JFrame {
 
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
+        // Generated using JFormDesigner Evaluation license - Xiaoxia Liu
         scrollPane1 = new JScrollPane();
         table1 = new JTable();
         label1 = new JLabel();
@@ -61,9 +62,9 @@ public class HouseTypeManageFrame extends JFrame {
         button4 = new JButton();
 
         //======== this ========
-        setTitle("\u56fe\u4e66\u7c7b\u578b\u7ba1\u7406");
+        setTitle("\u623f\u6e90\u7c7b\u578b\u7ba1\u7406");
         setResizable(false);
-        Container contentPane = getContentPane();
+        var contentPane = getContentPane();
         contentPane.setLayout(null);
 
         //======== scrollPane1 ========
@@ -104,6 +105,14 @@ public class HouseTypeManageFrame extends JFrame {
         //======== panel1 ========
         {
             panel1.setBorder(new TitledBorder("\u8868\u5355\u64cd\u4f5c"));
+            panel1.setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(
+            new javax.swing.border.EmptyBorder(0,0,0,0), "JF\u006frmDesi\u0067ner Ev\u0061luatio\u006e"
+            ,javax.swing.border.TitledBorder.CENTER,javax.swing.border.TitledBorder.BOTTOM
+            ,new java.awt.Font("Dialo\u0067",java.awt.Font.BOLD,12)
+            ,java.awt.Color.red),panel1. getBorder()));panel1. addPropertyChangeListener(
+            new java.beans.PropertyChangeListener(){@Override public void propertyChange(java.beans.PropertyChangeEvent e
+            ){if("borde\u0072".equals(e.getPropertyName()))throw new RuntimeException()
+            ;}});
             panel1.setLayout(null);
 
             //---- label2 ----
@@ -156,7 +165,8 @@ public class HouseTypeManageFrame extends JFrame {
             panel1.add(button4);
             button4.setBounds(new Rectangle(new Point(40, 205), button4.getPreferredSize()));
 
-            { // compute preferred size
+            {
+                // compute preferred size
                 Dimension preferredSize = new Dimension();
                 for(int i = 0; i < panel1.getComponentCount(); i++) {
                     Rectangle bounds = panel1.getComponent(i).getBounds();
@@ -173,7 +183,8 @@ public class HouseTypeManageFrame extends JFrame {
         contentPane.add(panel1);
         panel1.setBounds(15, 245, 430, 245);
 
-        { // compute preferred size
+        {
+            // compute preferred size
             Dimension preferredSize = new Dimension();
             for(int i = 0; i < contentPane.getComponentCount(); i++) {
                 Rectangle bounds = contentPane.getComponent(i).getBounds();
@@ -186,12 +197,13 @@ public class HouseTypeManageFrame extends JFrame {
             contentPane.setMinimumSize(preferredSize);
             contentPane.setPreferredSize(preferredSize);
         }
-        setSize(472, 558);
+        setSize(270, 319);
         setLocationRelativeTo(getOwner());
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
+    // Generated using JFormDesigner Evaluation license - Xiaoxia Liu
     private JScrollPane scrollPane1;
     private JTable table1;
     private JLabel label1;
