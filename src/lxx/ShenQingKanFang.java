@@ -9,7 +9,7 @@ import java.sql.*;
 public class ShenQingKanFang extends JFrame implements ActionListener {
 
     JLabel label1, label2;
-    JTextField jTextField1, jTextField2;
+    JTextField textField1, textField2;
     JButton button1, button2;
     JPanel panel1, panel2, panel3;
     Connection connection;
@@ -21,20 +21,20 @@ public class ShenQingKanFang extends JFrame implements ActionListener {
 
         label1 = new JLabel("请输入您的ID:");
         label1.setFont(new Font("宋体", Font.PLAIN, 20));
-        jTextField1 = new JTextField(10);
-        jTextField1.setFont(new Font("宋体", Font.PLAIN, 20));
+        textField1 = new JTextField(10);
+        textField1.setFont(new Font("宋体", Font.PLAIN, 20));
         panel1 = new JPanel(new FlowLayout(FlowLayout.LEFT));
         panel1.add(label1);
-        panel1.add(jTextField1);
+        panel1.add(textField1);
         this.add(panel1);
 
         label2 = new JLabel("请输入您要查看的房源ID:");
         label2.setFont(new Font("宋体", Font.PLAIN, 20));
-        jTextField2 = new JTextField(10);
-        jTextField2.setFont(new Font("宋体", Font.PLAIN, 20));
+        textField2 = new JTextField(10);
+        textField2.setFont(new Font("宋体", Font.PLAIN, 20));
         panel2 = new JPanel(new FlowLayout(FlowLayout.LEFT));
         panel2.add(label2);
-        panel2.add(jTextField2);
+        panel2.add(textField2);
         this.add(panel2);
 
         button1 = new JButton("确定");
@@ -73,8 +73,8 @@ public class ShenQingKanFang extends JFrame implements ActionListener {
                 connection = Link.getConnection();
                 String str = "insert into ApplyHouse(客户ID, 房源ID, 是否申请看房) values(?,?,1)";
                 preparedStatement = connection.prepareStatement(str, Statement.RETURN_GENERATED_KEYS);
-                preparedStatement.setString(1, jTextField1.getText());
-                preparedStatement.setString(2, jTextField2.getText());
+                preparedStatement.setString(1, textField1.getText());
+                preparedStatement.setString(2, textField2.getText());
                 preparedStatement.executeQuery();
                 JOptionPane.showMessageDialog(null, "申请成功！看房日期请于3个工作日后自行查看！");
             } catch (Exception exception) {
@@ -94,7 +94,7 @@ public class ShenQingKanFang extends JFrame implements ActionListener {
             Connection con = Link.getConnection();
             String str = "Select * from House where 房源ID = ?";
             PreparedStatement ps = con.prepareStatement(str);
-            ps.setString(1, jTextField1.getText());
+            ps.setString(1, textField1.getText());
             ResultSet rs = ps.executeQuery();
             if (! rs.next()) {
                 ok = false;
@@ -112,7 +112,7 @@ public class ShenQingKanFang extends JFrame implements ActionListener {
             Connection con = Link.getConnection();
             String str = "Select * from Customer where 客户ID = ?";
             PreparedStatement ps = con.prepareStatement(str);
-            ps.setString(1, jTextField2.getText());
+            ps.setString(1, textField2.getText());
             ResultSet rs = ps.executeQuery();
             if (! rs.next()) {
                 ok = false;

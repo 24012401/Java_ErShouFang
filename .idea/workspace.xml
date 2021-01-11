@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011302d3-d5a6-4fd0-ab7f-51a2451b7801" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lxx/ShenQingKanFang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/WinCustomerFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lxx/Notice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/HouseTypeManageFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/HouseTypeManageFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/HouseTypeManageFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/HouseTypeManageFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/HouseTypeManageFrame.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/HouseTypeManageFrame.jfd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame.jfd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zhw/view/HouseTypeManageFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zhw/view/HouseTypeManageFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zhw/view/HouseTypeManageFrame.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/zhw/view/HouseTypeManageFrame.jfd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zhw/view/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zhw/view/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zhw/view/MainFrame.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/zhw/view/MainFrame.jfd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lxx/ShenQingKanFang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/ShenQingKanFang.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +53,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.capture" />
   </component>
-  <component name="RunManager" selected="Application.ShenQingKanFang">
+  <component name="RunManager" selected="Application.Notice">
     <configuration name="LoginTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="zhw.view.LoginTest" />
       <module name="Java_ErShouFang" />
@@ -81,6 +70,19 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java_ErShouFang" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Notice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lxx.Notice" />
+      <module name="Java_ErShouFang" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lxx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,19 +113,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WinRegister (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lxx.WinRegister" />
-      <module name="Java_ErShouFang" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lxx.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WinSelectCustomer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lxx.WinSelectCustomer" />
       <module name="Java_ErShouFang" />
@@ -139,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Notice" />
+        <item itemvalue="Application.WinMain (1)" />
         <item itemvalue="Application.ShenQingKanFang" />
         <item itemvalue="Application.WinSelectCustomer" />
-        <item itemvalue="Application.WinMain (1)" />
         <item itemvalue="Application.LoginTest (1)" />
-        <item itemvalue="Application.WinRegister (1)" />
       </list>
     </recent_temporary>
   </component>
