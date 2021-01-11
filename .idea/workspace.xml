@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011302d3-d5a6-4fd0-ab7f-51a2451b7801" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lxx/Contracts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lxx/WinCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lxx/Notice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/Notice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.capture" />
   </component>
-  <component name="RunManager" selected="Application.Contracts">
+  <component name="RunManager" selected="Application.WinCustomer">
     <configuration name="Contracts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lxx.Contracts" />
       <module name="Java_ErShouFang" />
@@ -100,6 +99,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WinCustomer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lxx.WinCustomer" />
+      <module name="Java_ErShouFang" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lxx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WinMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lxx.WinMain" />
       <module name="Java_ErShouFang" />
@@ -113,26 +125,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WinSelectCustomer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lxx.WinSelectCustomer" />
-      <module name="Java_ErShouFang" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lxx.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WinCustomer" />
         <item itemvalue="Application.Contracts" />
         <item itemvalue="Application.Notice" />
         <item itemvalue="Application.WinMain (1)" />
         <item itemvalue="Application.ShenQingKanFang" />
-        <item itemvalue="Application.WinSelectCustomer" />
       </list>
     </recent_temporary>
   </component>
