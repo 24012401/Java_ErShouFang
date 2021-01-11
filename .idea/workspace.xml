@@ -2,145 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011302d3-d5a6-4fd0-ab7f-51a2451b7801" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lxx/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/FenPeiFangYuan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/HandleLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/Link.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/Register.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/SelectCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/SelectID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/WinMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/WinRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/WinRegisterAdmin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/WinRegisterMaiMai.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/WinRegisterSMan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/WinSelectCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/WinUpdateCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/entity/HouseType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/images/author.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/images/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/images/bg700-530.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/images/password.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/images/password1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/images/surprise.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/images/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/images/user1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/util/DbUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/util/StringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/About.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/About.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/HouseAddFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/HouseAddFrame.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/HouseTypeAddFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/HouseTypeAddFrame.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/HouseTypeManageFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/HouseTypeManageFrame.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/ImageInsertFrm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/ImageInsertFrm.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/LoginComeOn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/MainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/MainFrame.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/SalesmanMainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/SalesmanMainFrame.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/SignUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/SignUp.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/UserMainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/UserMainFrame.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhw/view/loginTest.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lxx/ShenQingKanFang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lxx/WinCustomerFunction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/FenPeiFangYuan$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/FenPeiFangYuan$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/FenPeiFangYuan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/HandleLogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/Link.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/Register.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/SelectCustomer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/SelectID.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinMain$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinMain$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinMain$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegister.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterAdmin$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterAdmin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterMaiMai.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterSMan$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterSMan$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterSMan$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinRegisterSMan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinSelectCustomer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinSelectCustomer$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinSelectCustomer$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinSelectCustomer$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinSelectCustomer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinUpdateCustomer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinUpdateCustomer$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinUpdateCustomer$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinUpdateCustomer$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/WinUpdateCustomer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FenPeiFangYuan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HandleLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Link.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Register.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SelectCustomer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SelectID.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WinMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WinRegister.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WinRegisterAdmin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WinRegisterMaiMai.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WinRegisterSMan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WinSelectCustomer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WinUpdateCustomer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/HouseType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/author.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/bg700-530.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/password.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/password1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/surprise.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/user.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/user1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/DbUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/StringUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/About.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/About.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/HouseAddFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/HouseAddFrame.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/HouseTypeAddFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/HouseTypeAddFrame.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/HouseTypeManageFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/HouseTypeManageFrame.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ImageInsertFrm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ImageInsertFrm.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/LoginComeOn.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/LoginTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/MainFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/MainFrame.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/SalesmanMainFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/SalesmanMainFrame.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/SignUp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/SignUp.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/UserMainFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/UserMainFrame.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/loginTest.jfd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/HouseTypeManageFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/HouseTypeManageFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/HouseTypeManageFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/HouseTypeManageFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/HouseTypeManageFrame.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/HouseTypeManageFrame.jfd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame.jfd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zhw/view/HouseTypeManageFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zhw/view/HouseTypeManageFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zhw/view/HouseTypeManageFrame.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/zhw/view/HouseTypeManageFrame.jfd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zhw/view/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zhw/view/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zhw/view/MainFrame.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/zhw/view/MainFrame.jfd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,13 +64,13 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.capture" />
   </component>
-  <component name="RunManager" selected="Application.WinSelectCustomer">
-    <configuration name="LoginTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="view.LoginTest" />
+  <component name="RunManager" selected="Application.ShenQingKanFang">
+    <configuration name="LoginTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="zhw.view.LoginTest" />
       <module name="Java_ErShouFang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="view.*" />
+          <option name="PATTERN" value="zhw.view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -206,6 +81,19 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java_ErShouFang" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShenQingKanFang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lxx.ShenQingKanFang" />
+      <module name="Java_ErShouFang" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lxx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -223,16 +111,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WinMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WinMain" />
+    <configuration name="WinRegister (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lxx.WinRegister" />
       <module name="Java_ErShouFang" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WinRegister" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WinRegister" />
-      <module name="Java_ErShouFang" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lxx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -252,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ShenQingKanFang" />
         <item itemvalue="Application.WinSelectCustomer" />
         <item itemvalue="Application.WinMain (1)" />
-        <item itemvalue="Application.LoginTest" />
-        <item itemvalue="Application.WinMain" />
-        <item itemvalue="Application.WinRegister" />
+        <item itemvalue="Application.LoginTest (1)" />
+        <item itemvalue="Application.WinRegister (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -293,8 +180,27 @@
           <properties class="com.microsoft.sqlserver.jdbc.SQLServerException" package="com.microsoft.sqlserver.jdbc" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="16" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/zhw/view/LoginTest.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/zhw/dao/UserDao.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="obj" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

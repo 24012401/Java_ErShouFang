@@ -1,5 +1,7 @@
 package lxx;
 
+import zhw.view.LoginTest;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -169,6 +171,8 @@ public class WinRegisterMaiMai extends JFrame implements ActionListener {
                 preparedStatement.setString(6, textField4.getText());
                 preparedStatement.executeQuery();
                 JOptionPane.showMessageDialog(null, "注册成功！");
+                LoginTest loginTest = new LoginTest();
+                loginTest.setVisible(true);
             } catch (Exception exception) {
                 exception.printStackTrace();
             } finally {

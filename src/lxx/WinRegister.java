@@ -101,7 +101,7 @@ public class WinRegister extends JFrame implements ActionListener {
                 }
                 preparedStatement = connection.prepareStatement(str, Statement.RETURN_GENERATED_KEYS);
                 preparedStatement.setString(1, leixing);
-                preparedStatement.setString(2, passwordField1.getPassword().toString());
+                preparedStatement.setString(2, passwordField1.getText());
                 preparedStatement.setString(3, canUse);
                 preparedStatement.executeUpdate();
                 // 获取系统自动生成的id

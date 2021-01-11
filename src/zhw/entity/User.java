@@ -11,29 +11,29 @@ package zhw.entity;
  * <br>描述 用户实体
  */
 public class User {
-    private int id;
-    private String userName;
+    private String id;
+    private String userType;
     private String password;
     public User(){super();}
-    public User(String userName,String password){
+    public User(String userID,String password){
         this.password = password;
-        this.userName = userName;
+        this.id = userID;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUserType() {
+        return userType;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUserType(String userName) {
+        this.userType = userName;
     }
 
     public String getPassword() {

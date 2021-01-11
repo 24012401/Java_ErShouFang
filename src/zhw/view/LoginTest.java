@@ -51,28 +51,28 @@ public class LoginTest extends JFrame {
 
     private void okButtonActionPerformed(ActionEvent e) {
         // TODO add your code here
-        String userName = this.textField1.getText();
+        String userID = this.textField1.getText();
         String password = this.passwordField1.getText();
-        if (StringUtil.isEmpty(userName)) {
+        if (StringUtil.isEmpty(userID)) {
             JOptionPane.showMessageDialog(null, "用户名不能为空");
         }
         else if (StringUtil.isEmpty(password)) {
             JOptionPane.showMessageDialog(null, "密码不能为空");
         }
         else{
-            User user = new User(userName, password);
+            User user = new User(userID, password);
             Connection conn = null;
             try {
                 conn = dbUtil.getConnection();
                 User currentUser = userDao.login(conn, user);
                 if (currentUser != null) {
-                    int key = comboBox1.getSelectedIndex();
-                    switch (key){
-                        case 0: new MainFrame().setVisible(true);
+//                    int key = comboBox1.getSelectedIndex();
+                    switch (currentUser.getUserType()){
+                        case "中介管理员": new MainFrame().setVisible(true);
                             break;
-                        case 1: new SalesmanMainFrame().setVisible(true);
+                        case "中介业务员": new SalesmanMainFrame().setVisible(true);
                             break;
-                        case 2: new UserMainFrame().setVisible(true);
+                        case "普通买卖方": new UserMainFrame().setVisible(true);
                             break;
                     }
                     this.setVisible(false);
@@ -103,11 +103,11 @@ public class LoginTest extends JFrame {
 
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
+        // Generated using JFormDesigner Evaluation license - Xiaoxia Liu
         dialogPane = new JPanel();
         contentPanel = new JPanel();
         label1 = new JLabel();
         textField1 = new JTextField();
-        comboBox1 = new JComboBox<>();
         label2 = new JLabel();
         passwordField1 = new JPasswordField();
         okButton = new JButton();
@@ -119,12 +119,19 @@ public class LoginTest extends JFrame {
         setTitle("\u767b\u5f55\u754c\u9762");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
-        Container contentPane = getContentPane();
+        var contentPane = getContentPane();
         contentPane.setLayout(new BorderLayout());
 
         //======== dialogPane ========
         {
             dialogPane.setBorder(new EmptyBorder(12, 12, 12, 12));
+            dialogPane.setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(new javax
+            .swing.border.EmptyBorder(0,0,0,0), "JF\u006frmDesi\u0067ner Ev\u0061luatio\u006e",javax.swing
+            .border.TitledBorder.CENTER,javax.swing.border.TitledBorder.BOTTOM,new java.awt.
+            Font("Dialo\u0067",java.awt.Font.BOLD,12),java.awt.Color.red
+            ),dialogPane. getBorder()));dialogPane. addPropertyChangeListener(new java.beans.PropertyChangeListener(){@Override
+            public void propertyChange(java.beans.PropertyChangeEvent e){if("borde\u0072".equals(e.getPropertyName(
+            )))throw new RuntimeException();}});
             dialogPane.setLayout(new BorderLayout());
 
             //======== contentPanel ========
@@ -147,17 +154,6 @@ public class LoginTest extends JFrame {
                 //---- textField1 ----
                 textField1.setColumns(16);
                 contentPanel.add(textField1, new GridBagConstraints(1, 1, 1, 1, 0.0, 0.0,
-                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                    new Insets(0, 0, 5, 5), 0, 0));
-
-                //---- comboBox1 ----
-                comboBox1.setModel(new DefaultComboBoxModel<>(new String[] {
-                    "\u7ba1\u7406\u5458",
-                    "\u4e1a\u52a1\u5458",
-                    "\u7528\u6237"
-                }));
-                comboBox1.addActionListener(e -> comboBox1ActionPerformed(e));
-                contentPanel.add(comboBox1, new GridBagConstraints(2, 1, 1, 1, 0.0, 0.0,
                     GridBagConstraints.CENTER, GridBagConstraints.BOTH,
                     new Insets(0, 0, 5, 5), 0, 0));
 
@@ -217,11 +213,11 @@ public class LoginTest extends JFrame {
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
+    // Generated using JFormDesigner Evaluation license - Xiaoxia Liu
     private JPanel dialogPane;
     private JPanel contentPanel;
     private JLabel label1;
     private JTextField textField1;
-    private JComboBox<String> comboBox1;
     private JLabel label2;
     private JPasswordField passwordField1;
     private JButton okButton;

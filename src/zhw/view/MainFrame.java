@@ -104,15 +104,16 @@ public class MainFrame extends JFrame {
 
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
+        // Generated using JFormDesigner Evaluation license - Xiaoxia Liu
         menuBar2 = new JMenuBar();
-        menu3 = new JMenu();
-        menuItem6 = new JMenuItem();
         menu6 = new JMenu();
         menuItem7 = new JMenuItem();
-        menu4 = new JMenu();
-        menuItem8 = new JMenuItem();
         menu2 = new JMenu();
         menuItem2 = new JMenuItem();
+        menu5 = new JMenu();
+        menuItem3 = new JMenuItem();
+        menu4 = new JMenu();
+        menuItem8 = new JMenuItem();
         menu1 = new JMenu();
         menuItem1 = new JMenuItem();
         menuItem4 = new JMenuItem();
@@ -147,7 +148,7 @@ public class MainFrame extends JFrame {
         delButton2 = new JButton();
 
         //======== this ========
-        setTitle("\u4e3b\u754c\u9762");
+        setTitle("\u7ba1\u7406\u5458\uff0c\u6b22\u8fce\u60a8\uff01");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
         addWindowListener(new WindowAdapter() {
@@ -156,22 +157,11 @@ public class MainFrame extends JFrame {
                 thisWindowClosing(e);
             }
         });
-        Container contentPane = getContentPane();
+        var contentPane = getContentPane();
         contentPane.setLayout(null);
 
         //======== menuBar2 ========
         {
-
-            //======== menu3 ========
-            {
-                menu3.setText("\u623f\u6e90\u7c7b\u522b\u64cd\u4f5c");
-
-                //---- menuItem6 ----
-                menuItem6.setText("\u623f\u6e90\u7c7b\u522b\u7ba1\u7406");
-                menuItem6.addActionListener(e -> menuItem6ActionPerformed(e));
-                menu3.add(menuItem6);
-            }
-            menuBar2.add(menu3);
 
             //======== menu6 ========
             {
@@ -184,6 +174,26 @@ public class MainFrame extends JFrame {
             }
             menuBar2.add(menu6);
 
+            //======== menu2 ========
+            {
+                menu2.setText("\u4e1a\u52a1\u5458");
+
+                //---- menuItem2 ----
+                menuItem2.setText("\u4e1a\u52a1\u5458\u7ba1\u7406");
+                menu2.add(menuItem2);
+            }
+            menuBar2.add(menu2);
+
+            //======== menu5 ========
+            {
+                menu5.setText("\u5ba2\u6237");
+
+                //---- menuItem3 ----
+                menuItem3.setText("\u5ba2\u6237\u7ba1\u7406");
+                menu5.add(menuItem3);
+            }
+            menuBar2.add(menu5);
+
             //======== menu4 ========
             {
                 menu4.setText("\u5173\u4e8e");
@@ -194,16 +204,6 @@ public class MainFrame extends JFrame {
                 menu4.add(menuItem8);
             }
             menuBar2.add(menu4);
-
-            //======== menu2 ========
-            {
-                menu2.setText("\u4e1a\u52a1\u5458");
-
-                //---- menuItem2 ----
-                menuItem2.setText("\u4e1a\u52a1\u5458\u7ba1\u7406");
-                menu2.add(menuItem2);
-            }
-            menuBar2.add(menu2);
 
             //======== menu1 ========
             {
@@ -225,6 +225,13 @@ public class MainFrame extends JFrame {
 
         //======== panel1 ========
         {
+            panel1.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax.
+            swing. border. EmptyBorder( 0, 0, 0, 0) , "JF\u006frm\u0044es\u0069gn\u0065r \u0045va\u006cua\u0074io\u006e", javax. swing. border
+            . TitledBorder. CENTER, javax. swing. border. TitledBorder. BOTTOM, new java .awt .Font ("D\u0069al\u006fg"
+            ,java .awt .Font .BOLD ,12 ), java. awt. Color. red) ,panel1. getBorder
+            ( )) ); panel1. addPropertyChangeListener (new java. beans. PropertyChangeListener( ){ @Override public void propertyChange (java
+            .beans .PropertyChangeEvent e) {if ("\u0062or\u0064er" .equals (e .getPropertyName () )) throw new RuntimeException
+            ( ); }} );
             panel1.setLayout(null);
 
             //---- label1 ----
@@ -254,7 +261,8 @@ public class MainFrame extends JFrame {
             panel1.add(button2);
             button2.setBounds(670, 30, 90, button2.getPreferredSize().height);
 
-            { // compute preferred size
+            {
+                // compute preferred size
                 Dimension preferredSize = new Dimension();
                 for(int i = 0; i < panel1.getComponentCount(); i++) {
                     Rectangle bounds = panel1.getComponent(i).getBounds();
@@ -378,7 +386,8 @@ public class MainFrame extends JFrame {
             panel4.add(delButton2);
             delButton2.setBounds(425, 300, 135, 30);
 
-            { // compute preferred size
+            {
+                // compute preferred size
                 Dimension preferredSize = new Dimension();
                 for(int i = 0; i < panel4.getComponentCount(); i++) {
                     Rectangle bounds = panel4.getComponent(i).getBounds();
@@ -395,7 +404,8 @@ public class MainFrame extends JFrame {
         contentPane.add(panel4);
         panel4.setBounds(15, 310, 790, 350);
 
-        { // compute preferred size
+        {
+            // compute preferred size
             Dimension preferredSize = new Dimension();
             for(int i = 0; i < contentPane.getComponentCount(); i++) {
                 Rectangle bounds = contentPane.getComponent(i).getBounds();
@@ -408,26 +418,27 @@ public class MainFrame extends JFrame {
             contentPane.setMinimumSize(preferredSize);
             contentPane.setPreferredSize(preferredSize);
         }
-        setSize(831, 751);
+        setSize(475, 429);
         setLocationRelativeTo(getOwner());
 
         //---- buttonGroup1 ----
-        ButtonGroup buttonGroup1 = new ButtonGroup();
+        var buttonGroup1 = new ButtonGroup();
         buttonGroup1.add(man2);
         buttonGroup1.add(woman2);
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
+    // Generated using JFormDesigner Evaluation license - Xiaoxia Liu
     private JMenuBar menuBar2;
-    private JMenu menu3;
-    private JMenuItem menuItem6;
     private JMenu menu6;
     private JMenuItem menuItem7;
-    private JMenu menu4;
-    private JMenuItem menuItem8;
     private JMenu menu2;
     private JMenuItem menuItem2;
+    private JMenu menu5;
+    private JMenuItem menuItem3;
+    private JMenu menu4;
+    private JMenuItem menuItem8;
     private JMenu menu1;
     private JMenuItem menuItem1;
     private JMenuItem menuItem4;
