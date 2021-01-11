@@ -29,8 +29,11 @@ public class WinSelectCustomer extends JFrame {
     public WinSelectCustomer() throws Exception {
 
         label1 = new JLabel("请输入客户ID:");
+        label1.setFont(new Font("宋体", Font.PLAIN, 20));
         textField1 = new JTextField(10);
+        textField1.setFont(new Font("宋体", Font.PLAIN, 20));
         button1 = new JButton("查询");
+        button1.setFont(new Font("宋体", Font.PLAIN, 20));
         panel1 = new JPanel();
         panel1.add(label1);
         panel1.add(textField1);
@@ -74,7 +77,9 @@ public class WinSelectCustomer extends JFrame {
 
 //        button2 = new JButton("添加");
         button3 = new JButton("修改");
+        button3.setFont(new Font("宋体", Font.PLAIN, 20));
         button4 = new JButton("返回");
+        button4.setFont(new Font("宋体", Font.PLAIN, 20));
 //        panel3.add(button2);
         panel2 = new JPanel();
         panel2.add(button3);
