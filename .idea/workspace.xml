@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011302d3-d5a6-4fd0-ab7f-51a2451b7801" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lxx/WinCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lxx/TabbleGeRenXinXi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lxx/TabbleShenQingKanFang.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/ShenQingKanFang.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/ShenQingKanFang.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinCustomer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lxx/ShenQingKanFang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/ShenQingKanFang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lxx/WinCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/WinCustomer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,10 +133,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.WinCustomer" />
+        <item itemvalue="Application.ShenQingKanFang" />
         <item itemvalue="Application.Contracts" />
         <item itemvalue="Application.Notice" />
         <item itemvalue="Application.WinMain (1)" />
-        <item itemvalue="Application.ShenQingKanFang" />
       </list>
     </recent_temporary>
   </component>
