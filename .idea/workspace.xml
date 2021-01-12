@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011302d3-d5a6-4fd0-ab7f-51a2451b7801" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lxx/TabbleAbout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinCustomer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/LoginTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/LoginTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/LoginTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lxx/TabbleGeRenXinXi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/TabbleGeRenXinXi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lxx/WinCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/WinCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zhw/view/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zhw/view/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +54,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.capture" />
   </component>
-  <component name="RunManager" selected="Application.LoginTest">
+  <component name="RunManager" selected="Application.WinCustomer">
     <configuration name="Contracts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lxx.Contracts" />
       <module name="Java_ErShouFang" />
@@ -132,8 +129,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LoginTest" />
         <item itemvalue="Application.WinCustomer" />
+        <item itemvalue="Application.LoginTest" />
         <item itemvalue="Application.WinRegister" />
         <item itemvalue="Application.ShenQingKanFang" />
         <item itemvalue="Application.Contracts" />

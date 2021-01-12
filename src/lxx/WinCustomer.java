@@ -79,8 +79,7 @@ public class WinCustomer extends JPanel {
     private JPanel createPanel5() {
         JPanel panel = new JPanel(false);
         panel.setLayout(null);
-
-
+        panel.add(new TabbleAbout(panel));
         return panel;
     }
     private JPanel createPanel6() {
