@@ -13,8 +13,11 @@ import java.awt.*;
 
 public class WinCustomer extends JPanel {
 
-    public WinCustomer() {
+    String ID;
+
+    public WinCustomer(String id) throws Exception {
         super(new GridLayout(1, 1));
+        ID = id;
         JTabbedPane tabbedPane1 = new JTabbedPane();
 //        JPanel panel = new JPanel(); // 查看个人信息
 //        JPanel panel1 = new JPanel(); // 查询房源
@@ -40,11 +43,10 @@ public class WinCustomer extends JPanel {
         this.add(tabbedPane1);
     }
 
-    private JPanel createPanel() {
+    private JPanel createPanel() throws Exception {
         JPanel panel = new JPanel(false);
         panel.setLayout(null);
-
-
+        panel.add(new TabbleGeRenXinXi(panel, ID));
         return panel;
     }
     private JPanel createPanel1() {
@@ -99,10 +101,11 @@ public class WinCustomer extends JPanel {
 //        return panel;
 //    }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         JFrame frame = new JFrame("客户");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.add(new WinCustomer(), BorderLayout.CENTER);
+        String str = "2";
+        frame.add(new WinCustomer(str), BorderLayout.CENTER);
         int screenWidth=Toolkit.getDefaultToolkit().getScreenSize().width;
         int screenHeight=Toolkit.getDefaultToolkit().getScreenSize().height;
         int jframeWidth = 800;

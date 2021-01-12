@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011302d3-d5a6-4fd0-ab7f-51a2451b7801" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lxx/TabbleGeRenXinXi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/TabbleShenQingKanFang.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/ShenQingKanFang.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/ShenQingKanFang.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinCustomer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lxx/ShenQingKanFang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/ShenQingKanFang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/LoginTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/LoginTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/LoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lxx/TabbleGeRenXinXi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/TabbleGeRenXinXi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lxx/WinCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/WinCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zhw/view/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zhw/view/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +57,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.capture" />
   </component>
-  <component name="RunManager" selected="Application.WinCustomer">
+  <component name="RunManager" selected="Application.LoginTest">
     <configuration name="Contracts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lxx.Contracts" />
       <module name="Java_ErShouFang" />
@@ -71,22 +71,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="LoginTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="zhw.view.LoginTest" />
       <module name="Java_ErShouFang" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zhw.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Notice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lxx.Notice" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java_ErShouFang" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lxx.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,8 +117,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WinMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lxx.WinMain" />
+    <configuration name="WinRegister" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lxx.WinRegister" />
       <module name="Java_ErShouFang" />
       <extension name="coverage">
         <pattern>
@@ -132,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LoginTest" />
         <item itemvalue="Application.WinCustomer" />
+        <item itemvalue="Application.WinRegister" />
         <item itemvalue="Application.ShenQingKanFang" />
         <item itemvalue="Application.Contracts" />
-        <item itemvalue="Application.Notice" />
-        <item itemvalue="Application.WinMain (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -177,16 +177,6 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="16" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/zhw/view/LoginTest.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/zhw/dao/UserDao.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
