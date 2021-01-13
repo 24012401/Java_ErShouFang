@@ -9,7 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class TabbleGeRenXinXi extends JPanel implements ActionListener {
+public class TabbleCustomerGeRenXinXi extends JPanel implements ActionListener {
 
     JLabel label1, label2, label3, label4, label5, label6;
     JButton button1;
@@ -17,7 +17,7 @@ public class TabbleGeRenXinXi extends JPanel implements ActionListener {
     Connection connection;
     PreparedStatement preparedStatement;
 
-    public TabbleGeRenXinXi(JPanel panel, String ID) throws Exception {
+    public TabbleCustomerGeRenXinXi(JPanel panel, String ID) throws Exception {
         panel.setLayout(new GridLayout(8, 1));
 
         try {
@@ -27,7 +27,7 @@ public class TabbleGeRenXinXi extends JPanel implements ActionListener {
             preparedStatement.setString(1, ID);
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
-                label1 = new JLabel("    您的ID为: " + resultSet.getString("客户ID"));
+                label1 = new JLabel("     您的ID为: " + resultSet.getString("客户ID"));
                 label1.setFont(new Font("宋体", Font.PLAIN, 20));
                 label2 = new JLabel("   您的姓名为: " + resultSet.getString("姓名"));
                 label2.setFont(new Font("宋体", Font.PLAIN, 20));
