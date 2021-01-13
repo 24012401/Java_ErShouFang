@@ -5,6 +5,7 @@
 package zhw.view;
 
 import lxx.WinCustomer;
+import lxx.WinSMan;
 import zhw.dao.UserDao;
 import zhw.entity.User;
 import lxx.WinRegister;
@@ -71,18 +72,27 @@ public class LoginTest extends JFrame {
                     switch (currentUser.getUserType()){
                         case "中介管理员": new MainFrame().setVisible(true);
                             break;
-                        case "中介业务员": new SalesmanMainFrame().setVisible(true);
+                        case "中介业务员":
+                            JFrame frame2 = new JFrame("业务员");
+                            frame2.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                            frame2.add(new WinSMan(userID, frame2), BorderLayout.CENTER);
+                            int screenWidth2=Toolkit.getDefaultToolkit().getScreenSize().width;
+                            int screenHeight2=Toolkit.getDefaultToolkit().getScreenSize().height;
+                            int jframeWidth2 = 800;
+                            int jframeHeight2 = 600;
+                            frame2.setBounds((screenWidth2/2)-(jframeWidth2/2), (screenHeight2/2)-(jframeHeight2/2), jframeWidth2, jframeHeight2);
+                            frame2.setVisible(true);
                             break;
                         case "普通买卖方":
-                            JFrame frame = new JFrame("客户");
-                            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                            frame.add(new WinCustomer(userID, frame), BorderLayout.CENTER);
-                            int screenWidth=Toolkit.getDefaultToolkit().getScreenSize().width;
-                            int screenHeight=Toolkit.getDefaultToolkit().getScreenSize().height;
-                            int jframeWidth = 800;
-                            int jframeHeight = 600;
-                            frame.setBounds((screenWidth/2)-(jframeWidth/2), (screenHeight/2)-(jframeHeight/2), jframeWidth, jframeHeight);
-                            frame.setVisible(true);
+                            JFrame frame3 = new JFrame("客户");
+                            frame3.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                            frame3.add(new WinCustomer(userID, frame3), BorderLayout.CENTER);
+                            int screenWidth3=Toolkit.getDefaultToolkit().getScreenSize().width;
+                            int screenHeight3=Toolkit.getDefaultToolkit().getScreenSize().height;
+                            int jframeWidth3 = 800;
+                            int jframeHeight3 = 600;
+                            frame3.setBounds((screenWidth3/2)-(jframeWidth3/2), (screenHeight3/2)-(jframeHeight3/2), jframeWidth3, jframeHeight3);
+                            frame3.setVisible(true);
                             break;
                     }
                     this.setVisible(false);

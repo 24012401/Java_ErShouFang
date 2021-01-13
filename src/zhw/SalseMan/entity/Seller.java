@@ -1,4 +1,4 @@
-package entity;
+package zhw.SalseMan.entity;
 
 import java.io.Serializable;
 

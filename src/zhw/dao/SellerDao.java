@@ -1,6 +1,6 @@
 package zhw.dao;
 
-import entity.Seller;
+import zhw.SalseMan.entity.Seller;
 import zhw.util.StringUtil;
 
 import java.sql.Connection;

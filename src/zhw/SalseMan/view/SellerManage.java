@@ -2,12 +2,12 @@
  * Created by JFormDesigner on Mon Jan 11 21:23:20 CST 2021
  */
 
-package view;
+package zhw.SalseMan.view;
 
-import dao.SellerDao;
-import entity.Seller;
-import util.DbUtil;
-import util.StringUtil;
+import zhw.SalseMan.dao.SellerDao;
+import zhw.SalseMan.entity.Seller;
+import zhw.util.DbUtil;
+import zhw.util.StringUtil;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -217,10 +217,10 @@ public class SellerManage extends JFrame {
         }
     }
 
-    private void addActionPerformed(ActionEvent e) {
-        // TODO add your code here
-        new SellerAddFrame().setVisible(true);
-    }
+//    private void addActionPerformed(ActionEvent e) {
+//        // TODO add your code here
+//        new SellerAddFrame().setVisible(true);
+//    }
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         scrollPane1 = new JScrollPane();
