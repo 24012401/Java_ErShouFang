@@ -1,7 +1,7 @@
-package dao;
+package zhw.SalseMan.dao;
 
-import entity.Seller;
-import util.StringUtil;
+import zhw.SalseMan.entity.Seller;
+import zhw.util.StringUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

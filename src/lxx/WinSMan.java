@@ -44,37 +44,37 @@ public class WinSMan extends JPanel {
     private JPanel createPanel1() {
         JPanel panel = new JPanel(false);
         panel.setLayout(null);
-
+        panel.add(new TabbleSelectHouse(panel));
         return panel;
     }
-    private Component createPanel2() {
+    private Component createPanel2() throws Exception {
         JPanel panel = new JPanel(false);
         panel.setLayout(null);
-
+        panel.add(new TabbleSelectCustomer(panel));
         return panel;
     }
     private JPanel createPanel3() {
         JPanel panel = new JPanel(false);
         panel.setLayout(null);
-
+        panel.add(new TabbleAddContracts(panel));
         return panel;
     }
     private JPanel createPanel4() {
         JPanel panel = new JPanel(false);
         panel.setLayout(null);
-
+        panel.add(new TabbleAddNotices(panel));
         return panel;
     }
     private JPanel createPanel5() {
         JPanel panel = new JPanel(false);
         panel.setLayout(null);
-
+        panel.add(new TabbleAbout(panel));
         return panel;
     }
     private JPanel createPanel6(JFrame frame) {
         JPanel panel = new JPanel(false);
         panel.setLayout(null);
-
+        panel.add(new TabbleExit(panel, frame));
         return panel;
     }
 
