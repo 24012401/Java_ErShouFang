@@ -2,40 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed47429c-ff22-4a78-be17-22e37d212c2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lxx/TabbleAddContracts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/TabbleAddNotices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/TabbleSelectCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/TabbleSelectHouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lxx/WinCustomerUpdateXinXi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/Link.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/Link.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/SelectCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/SelectCustomer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinMain$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinMain$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinRegister$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinRegister$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinRegisterAdmin$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinRegisterAdmin$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinRegisterMaiMai$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinRegisterMaiMai$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinRegisterSMan$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinRegisterSMan$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinRegisterSMan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinRegisterSMan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinSMan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinSMan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinSelectCustomer$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinSelectCustomer$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinUpdateCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinUpdateCustomer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/LoginTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/LoginTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/LoginTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/MainFrame.jfd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/HouseDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/SellerDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/House.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Seller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/TabbleCustomerGeRenXinXi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/TabbleCustomerGeRenXinXi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinCustomer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lxx/TabbleCustomerGeRenXinXi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/TabbleCustomerGeRenXinXi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lxx/TabbleSManGeRenXinXi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/TabbleSManGeRenXinXi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lxx/WinCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/WinCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lxx/WinSMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/WinSMan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/SellerManage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/SellerManage.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zhw/dao/SellerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zhw/dao/SellerDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zhw/view/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zhw/view/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zhw/view/SellerManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zhw/view/SellerManage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +43,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WinMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lxx.WinMain" />
+    <configuration name="WinAdmin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lxx.WinAdmin" />
       <module name="Java_ErShouFang" />
       <extension name="coverage">
         <pattern>
@@ -82,8 +56,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WinRegister" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lxx.WinRegister" />
+    <configuration name="WinCustomer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lxx.WinCustomer" />
       <module name="Java_ErShouFang" />
       <extension name="coverage">
         <pattern>
@@ -108,8 +82,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WinSelectCustomer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lxx.WinSelectCustomer" />
+    <configuration name="WinUpdateAdmin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lxx.WinUpdateAdmin" />
       <module name="Java_ErShouFang" />
       <extension name="coverage">
         <pattern>
@@ -124,10 +98,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.WinSMan" />
+        <item itemvalue="Application.WinCustomer" />
+        <item itemvalue="Application.WinAdmin" />
+        <item itemvalue="Application.WinUpdateAdmin" />
         <item itemvalue="Application.Contracts" />
-        <item itemvalue="Application.WinMain" />
-        <item itemvalue="Application.WinSelectCustomer" />
-        <item itemvalue="Application.WinRegister" />
       </list>
     </recent_temporary>
   </component>
@@ -135,7 +109,31 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="28" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="obj" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -13,33 +13,35 @@ import java.util.regex.Pattern;
  * time: 2021.01.10
  */
 
-public class WinUpdateCustomer extends JFrame implements ActionListener {
+public class WinCustomerUpdateXinXi extends JFrame implements ActionListener {
 
     // 手机号和身份证号的正则表达式
     public static final String REGEX_MOBILE = "^(1[3-9]\\d{9}$)";
     public static final String REGEX_CARD = "[1-9]{2}[0-9]{4}(19|20)[0-9]{2}" + "((0[1-9]{1})|(1[1-2]{1}))((0[1-9]{1})|([1-2]{1}[0-9]{1}|(3[0-1]{1})))" + "[0-9]{3}[0-9x]{1}";
     public static final String REGEX_MAIL = "^([a-z0-9A-Z]+[-|_|\\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-zA-Z]{2,}$";
 
-    JLabel label1, label2, label3, label4, label5, label6, label7;
-    JTextField textField, textField1, textField2, textField3, textField4;
+    JLabel label3, label4, label5, label6, label7;
+    JTextField textField1, textField2, textField3, textField4;
     JPanel panel1, panel2, panel3, panel4, panel5, panel6, panel7;
     JRadioButton radioButtonM, radioButtonF;
     JButton button1, button2;
     Connection connection;
     PreparedStatement preparedStatement;
+    String id;
 
-    public WinUpdateCustomer() throws SQLException {
-//        this.setLayout(new GridLayout(6, 1));
-        this.setLayout(new GridLayout(7, 1));
-        label1 = new JLabel("客户ID:");
-        label1.setFont(new Font("宋体", Font.PLAIN, 20));
-        textField = new JTextField(10);
-//        label2 = new JLabel(String.valueOf(id));
-        textField.setFont(new Font("宋体", Font.PLAIN, 20));
-        panel1 = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        panel1.add(label1);
-        panel1.add(textField);
-        this.add(panel1);
+    public WinCustomerUpdateXinXi(String ID) throws SQLException {
+        this.setLayout(new GridLayout(6, 1));
+        id = ID;
+
+//        label1 = new JLabel("客户ID:");
+//        label1.setFont(new Font("宋体", Font.PLAIN, 20));
+////        textField = new JTextField(10);
+//        label2 = new JLabel(id);
+////        textField.setFont(new Font("宋体", Font.PLAIN, 20));
+//        panel1 = new JPanel(new FlowLayout(FlowLayout.LEFT));
+//        panel1.add(label1);
+//        panel1.add(label2);
+//        this.add(panel1);
 
         label3 = new JLabel("  姓名: ");
         label3.setFont(new Font("宋体", Font.PLAIN, 20));
@@ -162,7 +164,7 @@ public class WinUpdateCustomer extends JFrame implements ActionListener {
                 preparedStatement.setString(3, textField2.getText());
                 preparedStatement.setString(4, textField3.getText());
                 preparedStatement.setString(5, textField4.getText());
-                preparedStatement.setString(6, textField.getText());
+                preparedStatement.setString(6, id);
                 preparedStatement.executeQuery();
                 JOptionPane.showMessageDialog(null, "修改成功！");
             } catch (Exception exception) {
@@ -182,7 +184,7 @@ public class WinUpdateCustomer extends JFrame implements ActionListener {
             Connection con = Link.getConnection();
             String str = "Select 姓名 from Customer where 客户ID = ?";
             PreparedStatement ps = con.prepareStatement(str);
-            ps.setString(1, textField.getText());
+            ps.setString(1, id);
             ResultSet rs = ps.executeQuery();
             if (! rs.next()) {
                 ok = false;
@@ -253,22 +255,22 @@ public class WinUpdateCustomer extends JFrame implements ActionListener {
     }
 
     private void newWin() throws SQLException {
-        WinUpdateCustomer winUpdateCustomer = new WinUpdateCustomer();
-        winUpdateCustomer.setTitle("修改客户信息");
-        winUpdateCustomer.setBounds(400, 200, 450, 350);
-        winUpdateCustomer.setVisible(true);
-        winUpdateCustomer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+        WinCustomerUpdateXinXi winCustomerUpdateXinXi = new WinCustomerUpdateXinXi(id);
+        winCustomerUpdateXinXi.setTitle("修改客户信息");
+        winCustomerUpdateXinXi.setBounds(400, 200, 450, 350);
+        winCustomerUpdateXinXi.setVisible(true);
+        winCustomerUpdateXinXi.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
     }
 
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    WinUpdateCustomer winUpdateCustomer = new WinUpdateCustomer();
-                    winUpdateCustomer.setTitle("修改客户信息");
-                    winUpdateCustomer.setBounds(400, 200, 450, 350);
-                    winUpdateCustomer.setVisible(true);
-                    winUpdateCustomer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+                    WinCustomerUpdateXinXi winCustomerUpdateXinXi = new WinCustomerUpdateXinXi("3");
+                    winCustomerUpdateXinXi.setTitle("修改客户信息");
+                    winCustomerUpdateXinXi.setBounds(400, 200, 450, 350);
+                    winCustomerUpdateXinXi.setVisible(true);
+                    winCustomerUpdateXinXi.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
                 } catch (Exception e) {
                     e. printStackTrace();
                 }

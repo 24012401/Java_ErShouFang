@@ -37,7 +37,7 @@ public class TabbleSelectCustomer extends JPanel{
                     exception.printStackTrace();
                 }
                 updateCostomer.setTitle("查询客户信息");
-                updateCostomer.setBounds(450, 200, 800, 500);
+                updateCostomer.setBounds(450, 200, 900, 600);
                 updateCostomer.setVisible(true);
                 updateCostomer.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);  //关闭窗口
             }

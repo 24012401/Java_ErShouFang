@@ -17,7 +17,7 @@ public class WinSMan extends JPanel {
         ID = id;
         JTabbedPane tabbedPane1 = new JTabbedPane();
 
-        JPanel panel = createPanel(); // 查看个人信息
+        JPanel panel = createPanel(frame); // 查看个人信息
         JPanel panel1 = createPanel1(); // 查询房源
         Component panel2 = createPanel2(); // 查询客户信息
         JPanel panel3 = createPanel3(); // 录入合同
@@ -35,10 +35,10 @@ public class WinSMan extends JPanel {
         this.add(tabbedPane1);
     }
 
-    private JPanel createPanel() throws Exception{
+    private JPanel createPanel(JFrame frame) throws Exception{
         JPanel panel = new JPanel(false);
         panel.setLayout(null);
-        panel.add(new TabbleSManGeRenXinXi(panel, ID));
+        panel.add(new TabbleSManGeRenXinXi(panel, ID, frame));
         return panel;
     }
     private JPanel createPanel1() {
