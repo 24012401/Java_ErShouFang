@@ -4,6 +4,7 @@
 
 package zhw.view;
 
+import lxx.WinAdmin;
 import lxx.WinCustomer;
 import lxx.WinSMan;
 import zhw.dao.UserDao;
@@ -70,7 +71,16 @@ public class LoginTest extends JFrame {
                 if (currentUser != null) {
 //                    int key = comboBox1.getSelectedIndex();
                     switch (currentUser.getUserType()){
-                        case "中介管理员": new MainFrame().setVisible(true);
+                        case "中介管理员":
+                            JFrame frame = new JFrame("管理员");
+                            frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                            frame.add(new WinAdmin(userID, frame), BorderLayout.CENTER);
+                            int screenWidth=Toolkit.getDefaultToolkit().getScreenSize().width;
+                            int screenHeight=Toolkit.getDefaultToolkit().getScreenSize().height;
+                            int jframeWidth = 800;
+                            int jframeHeight = 600;
+                            frame.setBounds((screenWidth/2)-(jframeWidth/2), (screenHeight/2)-(jframeHeight/2), jframeWidth, jframeHeight);
+                            frame.setVisible(true);
                             break;
                         case "中介业务员":
                             JFrame frame2 = new JFrame("业务员");

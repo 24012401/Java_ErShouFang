@@ -120,7 +120,7 @@ public class WinUpdateCustomer extends JFrame implements ActionListener {
             }
         });
 
-        // 注册按钮监听
+        // 修改按钮监听
         button1.addActionListener((ActionListener) this);
         // 取消按钮监听
         button2.addActionListener(new ActionListener() {
