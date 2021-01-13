@@ -1,9 +1,13 @@
 package lxx;
 
 import javafx.embed.swt.SWTFXUtils;
+import zhw.view.LoginTest;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
 
 /**
  * author: 刘晓霞
@@ -14,8 +18,9 @@ import java.awt.*;
 public class WinCustomer extends JPanel {
 
     String ID;
+//    JButton button;
 
-    public WinCustomer(String id) throws Exception {
+    public WinCustomer(String id, JFrame frame) throws Exception {
         super(new GridLayout(1, 1));
         ID = id;
         JTabbedPane tabbedPane1 = new JTabbedPane();
@@ -32,16 +37,28 @@ public class WinCustomer extends JPanel {
         JPanel panel3 = createPanel3(); // 申请卖房
         JPanel panel4 = createPanel4(); // 查询业务员信息
         JPanel panel5 = createPanel5(); // 关于
-        JPanel panel6 = createPanel6(); // 退出登录
+        JPanel panel6 = createPanel6(frame); // 退出登录
+//        button = new JButton(); // 退出登录
         tabbedPane1.addTab("个人信息", panel);
         tabbedPane1.addTab("查询房源", panel1);
         tabbedPane1.addTab("申请看房", panel2);
         tabbedPane1.addTab("申请卖房", panel3);
         tabbedPane1.addTab("查询业务员信息", panel4);
         tabbedPane1.addTab("关于", panel5);
+//        tabbedPane1.addTab("退出登录", button);
         tabbedPane1.addTab("退出登录", panel6);
         this.add(tabbedPane1);
+//        awtEvent(); //创建监听
     }
+
+//    private void awtEvent() {
+//        button.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                WinCustomer.super.setVisible(false);
+//            }
+//        });
+//    }
 
     private JPanel createPanel() throws Exception {
         JPanel panel = new JPanel(false);
@@ -52,7 +69,6 @@ public class WinCustomer extends JPanel {
     private JPanel createPanel1() {
         JPanel panel = new JPanel(false);
         panel.setLayout(null);
-
 
         return panel;
     }
@@ -82,11 +98,11 @@ public class WinCustomer extends JPanel {
         panel.add(new TabbleAbout(panel));
         return panel;
     }
-    private JPanel createPanel6() {
+
+    private JPanel createPanel6(JFrame frame) {
         JPanel panel = new JPanel(false);
         panel.setLayout(null);
-
-
+        panel.add(new TabbleExit(panel, frame));
         return panel;
     }
 
@@ -102,9 +118,9 @@ public class WinCustomer extends JPanel {
 
     public static void main(String[] args) throws Exception {
         JFrame frame = new JFrame("客户");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         String str = "2";
-        frame.add(new WinCustomer(str), BorderLayout.CENTER);
+        frame.add(new WinCustomer(str, frame), BorderLayout.CENTER);
         int screenWidth=Toolkit.getDefaultToolkit().getScreenSize().width;
         int screenHeight=Toolkit.getDefaultToolkit().getScreenSize().height;
         int jframeWidth = 800;

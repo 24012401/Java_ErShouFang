@@ -92,7 +92,7 @@ public class TabbleGeRenXinXi extends JPanel implements ActionListener {
             winUpdateCustomer.setTitle("修改客户信息");
             winUpdateCustomer.setBounds(400, 200, 450, 350);
             winUpdateCustomer.setVisible(true);
-            winUpdateCustomer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+            winUpdateCustomer.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);  // 关闭当前窗口
         }
     }
 }

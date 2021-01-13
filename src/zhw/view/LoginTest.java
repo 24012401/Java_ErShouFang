@@ -76,7 +76,7 @@ public class LoginTest extends JFrame {
                         case "普通买卖方":
                             JFrame frame = new JFrame("客户");
                             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                            frame.add(new WinCustomer(userID), BorderLayout.CENTER);
+                            frame.add(new WinCustomer(userID, frame), BorderLayout.CENTER);
                             int screenWidth=Toolkit.getDefaultToolkit().getScreenSize().width;
                             int screenHeight=Toolkit.getDefaultToolkit().getScreenSize().height;
                             int jframeWidth = 800;
