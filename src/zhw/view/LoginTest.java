@@ -4,6 +4,7 @@
 
 package zhw.view;
 
+import lxx.WinCustomer;
 import zhw.dao.UserDao;
 import zhw.entity.User;
 import lxx.WinRegister;
@@ -72,7 +73,16 @@ public class LoginTest extends JFrame {
                             break;
                         case "中介业务员": new SalesmanMainFrame().setVisible(true);
                             break;
-                        case "普通买卖方": new UserMainFrame().setVisible(true);
+                        case "普通买卖方":
+                            JFrame frame = new JFrame("客户");
+                            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                            frame.add(new WinCustomer(userID, frame), BorderLayout.CENTER);
+                            int screenWidth=Toolkit.getDefaultToolkit().getScreenSize().width;
+                            int screenHeight=Toolkit.getDefaultToolkit().getScreenSize().height;
+                            int jframeWidth = 800;
+                            int jframeHeight = 600;
+                            frame.setBounds((screenWidth/2)-(jframeWidth/2), (screenHeight/2)-(jframeHeight/2), jframeWidth, jframeHeight);
+                            frame.setVisible(true);
                             break;
                     }
                     this.setVisible(false);

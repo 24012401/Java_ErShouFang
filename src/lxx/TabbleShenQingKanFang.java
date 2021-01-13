@@ -6,8 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
 
-public class ShenQingKanFang extends JFrame implements ActionListener {
-
+public class TabbleShenQingKanFang extends JPanel implements ActionListener {
     JLabel label1, label2;
     JTextField textField1, textField2;
     JButton button1, button2;
@@ -15,18 +14,19 @@ public class ShenQingKanFang extends JFrame implements ActionListener {
     Connection connection;
     PreparedStatement preparedStatement;
 
-    public ShenQingKanFang() {
+    public TabbleShenQingKanFang(JPanel panel) {
 
-        this.setLayout(new GridLayout(3, 1));
+//        JPanel panel = new JPanel();
+        panel.setLayout(new GridLayout(4, 1));
 
-        label1 = new JLabel("请输入您的ID:");
+        label1 = new JLabel("         请输入您的ID:");
         label1.setFont(new Font("宋体", Font.PLAIN, 20));
         textField1 = new JTextField(10);
         textField1.setFont(new Font("宋体", Font.PLAIN, 20));
         panel1 = new JPanel(new FlowLayout(FlowLayout.LEFT));
         panel1.add(label1);
         panel1.add(textField1);
-        this.add(panel1);
+        panel.add(panel1);
 
         label2 = new JLabel("请输入您要查看的房源ID:");
         label2.setFont(new Font("宋体", Font.PLAIN, 20));
@@ -35,7 +35,7 @@ public class ShenQingKanFang extends JFrame implements ActionListener {
         panel2 = new JPanel(new FlowLayout(FlowLayout.LEFT));
         panel2.add(label2);
         panel2.add(textField2);
-        this.add(panel2);
+        panel.add(panel2);
 
         button1 = new JButton("确定");
         button1.setFont(new Font("宋体", Font.PLAIN, 20));
@@ -44,7 +44,7 @@ public class ShenQingKanFang extends JFrame implements ActionListener {
         panel3 = new JPanel(new FlowLayout(FlowLayout.CENTER));
         panel3.add(button1);
         panel3.add(button2);
-        this.add(panel3);
+        panel.add(panel3);
 
         // 添加监听
         awtEvent();
@@ -55,7 +55,8 @@ public class ShenQingKanFang extends JFrame implements ActionListener {
         button2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                dispose();
+                textField1.setText("");
+                textField2.setText("");
             }
         });
     }
@@ -98,9 +99,11 @@ public class ShenQingKanFang extends JFrame implements ActionListener {
             ResultSet rs = ps.executeQuery();
             if (! rs.next()) {
                 ok = false;
-                this.dispose();
+//                this.dispose();
                 JOptionPane.showMessageDialog(this, "无此房源，请重新输入！", "警告信息", JOptionPane.WARNING_MESSAGE);
-                newWin();
+//                newWin();
+                textField2.setText("");
+
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -116,36 +119,37 @@ public class ShenQingKanFang extends JFrame implements ActionListener {
             ResultSet rs = ps.executeQuery();
             if (! rs.next()) {
                 ok = false;
-                this.dispose();
+//                this.dispose();
                 JOptionPane.showMessageDialog(this, "无此客户，请重新输入！", "警告信息", JOptionPane.WARNING_MESSAGE);
-                newWin();
+//                newWin();
+                textField1.setText("");
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-
-    private void newWin() {
-        ShenQingKanFang shenQingKanFang = new ShenQingKanFang();
-        shenQingKanFang.setTitle("申请看房");
-        shenQingKanFang.setBounds(450, 200, 400, 300);
-        shenQingKanFang.setVisible(true);
-        shenQingKanFang.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
-    }
-
-    public static void main(String[] args) {
-        EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                try {
-                    ShenQingKanFang shenQingKanFang = new ShenQingKanFang();
-                    shenQingKanFang.setTitle("申请看房");
-                    shenQingKanFang.setBounds(450, 200, 400, 300);
-                    shenQingKanFang.setVisible(true);
-                    shenQingKanFang.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
-                } catch (Exception e) {
-                    e. printStackTrace();
-                }
-            }
-        });
-    }
+//
+//    private void newWin() {
+//        ShenQingKanFang shenQingKanFang = new ShenQingKanFang();
+//        shenQingKanFang.setTitle("申请看房");
+//        shenQingKanFang.setBounds(450, 200, 400, 300);
+//        shenQingKanFang.setVisible(true);
+//        shenQingKanFang.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+//    }
+//
+//    public static void main(String[] args) {
+//        EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                try {
+//                    ShenQingKanFang shenQingKanFang = new ShenQingKanFang();
+//                    shenQingKanFang.setTitle("申请看房");
+//                    shenQingKanFang.setBounds(450, 200, 400, 300);
+//                    shenQingKanFang.setVisible(true);
+//                    shenQingKanFang.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+//                } catch (Exception e) {
+//                    e. printStackTrace();
+//                }
+//            }
+//        });
+//    }
 }
