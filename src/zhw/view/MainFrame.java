@@ -102,9 +102,13 @@ public class MainFrame extends JFrame {
         new LoginTest().setVisible(true);
     }
 
+    private void menuItem2ActionPerformed(ActionEvent e) {
+        // TODO add your code here
+        new SellerManage().setVisible(true);
+    }
+
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
-        // Generated using JFormDesigner Evaluation license - Xiaoxia Liu
         menuBar2 = new JMenuBar();
         menu6 = new JMenu();
         menuItem7 = new JMenuItem();
@@ -157,7 +161,7 @@ public class MainFrame extends JFrame {
                 thisWindowClosing(e);
             }
         });
-        var contentPane = getContentPane();
+        Container contentPane = getContentPane();
         contentPane.setLayout(null);
 
         //======== menuBar2 ========
@@ -180,6 +184,7 @@ public class MainFrame extends JFrame {
 
                 //---- menuItem2 ----
                 menuItem2.setText("\u4e1a\u52a1\u5458\u7ba1\u7406");
+                menuItem2.addActionListener(e -> menuItem2ActionPerformed(e));
                 menu2.add(menuItem2);
             }
             menuBar2.add(menu2);
@@ -225,13 +230,6 @@ public class MainFrame extends JFrame {
 
         //======== panel1 ========
         {
-            panel1.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax.
-            swing. border. EmptyBorder( 0, 0, 0, 0) , "JF\u006frm\u0044es\u0069gn\u0065r \u0045va\u006cua\u0074io\u006e", javax. swing. border
-            . TitledBorder. CENTER, javax. swing. border. TitledBorder. BOTTOM, new java .awt .Font ("D\u0069al\u006fg"
-            ,java .awt .Font .BOLD ,12 ), java. awt. Color. red) ,panel1. getBorder
-            ( )) ); panel1. addPropertyChangeListener (new java. beans. PropertyChangeListener( ){ @Override public void propertyChange (java
-            .beans .PropertyChangeEvent e) {if ("\u0062or\u0064er" .equals (e .getPropertyName () )) throw new RuntimeException
-            ( ); }} );
             panel1.setLayout(null);
 
             //---- label1 ----
@@ -261,8 +259,7 @@ public class MainFrame extends JFrame {
             panel1.add(button2);
             button2.setBounds(670, 30, 90, button2.getPreferredSize().height);
 
-            {
-                // compute preferred size
+            { // compute preferred size
                 Dimension preferredSize = new Dimension();
                 for(int i = 0; i < panel1.getComponentCount(); i++) {
                     Rectangle bounds = panel1.getComponent(i).getBounds();
@@ -386,8 +383,7 @@ public class MainFrame extends JFrame {
             panel4.add(delButton2);
             delButton2.setBounds(425, 300, 135, 30);
 
-            {
-                // compute preferred size
+            { // compute preferred size
                 Dimension preferredSize = new Dimension();
                 for(int i = 0; i < panel4.getComponentCount(); i++) {
                     Rectangle bounds = panel4.getComponent(i).getBounds();
@@ -404,8 +400,7 @@ public class MainFrame extends JFrame {
         contentPane.add(panel4);
         panel4.setBounds(15, 310, 790, 350);
 
-        {
-            // compute preferred size
+        { // compute preferred size
             Dimension preferredSize = new Dimension();
             for(int i = 0; i < contentPane.getComponentCount(); i++) {
                 Rectangle bounds = contentPane.getComponent(i).getBounds();
@@ -418,18 +413,17 @@ public class MainFrame extends JFrame {
             contentPane.setMinimumSize(preferredSize);
             contentPane.setPreferredSize(preferredSize);
         }
-        setSize(475, 429);
+        setSize(831, 751);
         setLocationRelativeTo(getOwner());
 
         //---- buttonGroup1 ----
-        var buttonGroup1 = new ButtonGroup();
+        ButtonGroup buttonGroup1 = new ButtonGroup();
         buttonGroup1.add(man2);
         buttonGroup1.add(woman2);
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
-    // Generated using JFormDesigner Evaluation license - Xiaoxia Liu
     private JMenuBar menuBar2;
     private JMenu menu6;
     private JMenuItem menuItem7;
