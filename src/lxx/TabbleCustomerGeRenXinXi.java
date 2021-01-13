@@ -12,13 +12,18 @@ import java.sql.SQLException;
 public class TabbleCustomerGeRenXinXi extends JPanel implements ActionListener {
 
     JLabel label1, label2, label3, label4, label5, label6;
-    JButton button1;
+    JButton button1, button2;
     JPanel panel1, panel2, panel3, panel4, panel5, panel6, panel7;
     Connection connection;
     PreparedStatement preparedStatement;
+    JFrame fra;
+    String id;
 
-    public TabbleCustomerGeRenXinXi(JPanel panel, String ID) throws Exception {
+    public TabbleCustomerGeRenXinXi(JPanel panel, String ID, JFrame frame) throws Exception {
         panel.setLayout(new GridLayout(8, 1));
+
+        id = ID;
+        fra = frame;
 
         try {
             connection = Link.getConnection();
@@ -70,8 +75,11 @@ public class TabbleCustomerGeRenXinXi extends JPanel implements ActionListener {
 
         button1 = new JButton("修改");
         button1.setFont(new Font("宋体", Font.PLAIN, 20));
+        button2 = new JButton("刷新");
+        button2.setFont(new Font("宋体", Font.PLAIN, 20));
         panel7 = new JPanel(new FlowLayout(FlowLayout.CENTER));
         panel7.add(button1);
+        panel7.add(button2);
         panel.add(panel7);
 
         awtEvent(); //创建监听
@@ -79,20 +87,38 @@ public class TabbleCustomerGeRenXinXi extends JPanel implements ActionListener {
 
     private void awtEvent() {
         button1.addActionListener((ActionListener) this);
+        button2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                fra.dispose();
+                JFrame frame3 = new JFrame("客户");
+                frame3.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                try {
+                    frame3.add(new WinCustomer(id, frame3), BorderLayout.CENTER);
+                } catch (Exception exception) {
+                    exception.printStackTrace();
+                }
+                int screenWidth3=Toolkit.getDefaultToolkit().getScreenSize().width;
+                int screenHeight3=Toolkit.getDefaultToolkit().getScreenSize().height;
+                int jframeWidth3 = 800;
+                int jframeHeight3 = 600;
+                frame3.setBounds((screenWidth3/2)-(jframeWidth3/2), (screenHeight3/2)-(jframeHeight3/2), jframeWidth3, jframeHeight3);
+                frame3.setVisible(true);
+            }
+        });
     }
 
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == button1) {
-            WinUpdateCustomer winUpdateCustomer = null;
+            WinCustomerUpdateXinXi winCustomerUpdateXinXi = null;
             try {
-                winUpdateCustomer = new WinUpdateCustomer();
+                winCustomerUpdateXinXi = new WinCustomerUpdateXinXi(id);
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
             }
-            winUpdateCustomer.setTitle("修改客户信息");
-            winUpdateCustomer.setBounds(400, 200, 450, 350);
-            winUpdateCustomer.setVisible(true);
-            winUpdateCustomer.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);  // 关闭当前窗口
+            winCustomerUpdateXinXi.setTitle("修改客户信息");
+            winCustomerUpdateXinXi.setBounds(400, 200, 450, 350);
+            winCustomerUpdateXinXi.setVisible(true);
         }
     }
 }

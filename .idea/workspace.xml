@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed47429c-ff22-4a78-be17-22e37d212c2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lxx/ShenHeZhangHao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/TabbleAdminGeRenXinXi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/TabbleSelectSMan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/WinAdmin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/WinUpdateAdmin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lxx/WinCustomerUpdateXinXi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/TabbleSelectCustomer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/TabbleSelectCustomer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/LoginTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/LoginTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/zhw/view/LoginTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lxx/TabbleSelectCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/TabbleSelectCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lxx/WinUpdateCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/WinUpdateCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zhw/view/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zhw/view/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/TabbleCustomerGeRenXinXi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/TabbleCustomerGeRenXinXi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinCustomer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lxx/TabbleCustomerGeRenXinXi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/TabbleCustomerGeRenXinXi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lxx/TabbleSManGeRenXinXi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/TabbleSManGeRenXinXi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lxx/WinCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/WinCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lxx/WinSMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/WinSMan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +29,7 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="RunManager" selected="Application.WinAdmin">
+  <component name="RunManager" selected="Application.WinSMan">
     <configuration name="Contracts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lxx.Contracts" />
       <module name="Java_ErShouFang" />
@@ -60,8 +56,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WinMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lxx.WinMain" />
+    <configuration name="WinCustomer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lxx.WinCustomer" />
       <module name="Java_ErShouFang" />
       <extension name="coverage">
         <pattern>
@@ -101,11 +97,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WinSMan" />
+        <item itemvalue="Application.WinCustomer" />
         <item itemvalue="Application.WinAdmin" />
         <item itemvalue="Application.WinUpdateAdmin" />
-        <item itemvalue="Application.WinSMan" />
         <item itemvalue="Application.Contracts" />
-        <item itemvalue="Application.WinMain" />
       </list>
     </recent_temporary>
   </component>

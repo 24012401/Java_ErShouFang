@@ -11,13 +11,17 @@ import java.sql.SQLException;
 
 public class TabbleSManGeRenXinXi extends JPanel implements ActionListener {
     JLabel label1, label2, label3, label4, label5, label6;
-    JButton button1;
+    JButton button1, button2;
     JPanel panel1, panel2, panel3, panel4, panel5, panel6, panel7;
     Connection connection;
     PreparedStatement preparedStatement;
+    String id;
+    JFrame fra;
 
-    public TabbleSManGeRenXinXi(JPanel panel, String ID) {
+    public TabbleSManGeRenXinXi(JPanel panel, String ID, JFrame frame) {
         panel.setLayout(new GridLayout(8, 1));
+        id = ID;
+        fra = frame;
 
         try {
             connection = Link.getConnection();
@@ -69,21 +73,44 @@ public class TabbleSManGeRenXinXi extends JPanel implements ActionListener {
 
         button1 = new JButton("修改");
         button1.setFont(new Font("宋体", Font.PLAIN, 20));
+        button2 = new JButton("取消");
+        button2.setFont(new Font("宋体", Font.PLAIN, 20));
         panel7 = new JPanel(new FlowLayout(FlowLayout.CENTER));
         panel7.add(button1);
-        panel.add(panel7);
+        panel7.add(button2);
+        this.add(panel7);
 
         awtEvent(); //创建监听
     }
 
     private void awtEvent() {
         button1.addActionListener((ActionListener) this);
+        button2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                fra.dispose();
+                JFrame frame2 = new JFrame("业务员");
+                frame2.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                try {
+                    frame2.add(new WinSMan(id, frame2), BorderLayout.CENTER);
+                } catch (Exception exception) {
+                    exception.printStackTrace();
+                }
+                int screenWidth2=Toolkit.getDefaultToolkit().getScreenSize().width;
+                int screenHeight2=Toolkit.getDefaultToolkit().getScreenSize().height;
+                int jframeWidth2 = 800;
+                int jframeHeight2 = 600;
+                frame2.setBounds((screenWidth2/2)-(jframeWidth2/2), (screenHeight2/2)-(jframeHeight2/2), jframeWidth2, jframeHeight2);
+                frame2.setVisible(true);
+            }
+        });
     }
 
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == button1) {
 
-//            winUpdateCustomer.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);  // 关闭当前窗口
+
+
         }
     }
 }

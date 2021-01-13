@@ -25,7 +25,7 @@ public class WinCustomer extends JPanel {
 //        JPanel panel4 = new JPanel(); // 查询业务员信息
 //        JPanel panel5 = new JPanel(); // 关于
 //        JPanel panel6 = new JPanel(); // 退出登录
-        JPanel panel = createPanel(); // 查看个人信息
+        JPanel panel = createPanel(frame); // 查看个人信息
         JPanel panel1 = createPanel1(); // 查询房源
         Component panel2 = createPanel2(); // 申请看房
         JPanel panel3 = createPanel3(); // 申请卖房
@@ -54,10 +54,10 @@ public class WinCustomer extends JPanel {
 //        });
 //    }
 
-    private JPanel createPanel() throws Exception {
+    private JPanel createPanel(JFrame frame) throws Exception {
         JPanel panel = new JPanel(false);
         panel.setLayout(null);
-        panel.add(new TabbleCustomerGeRenXinXi(panel, ID));
+        panel.add(new TabbleCustomerGeRenXinXi(panel, ID, frame));
         return panel;
     }
     private JPanel createPanel1() {
@@ -82,8 +82,7 @@ public class WinCustomer extends JPanel {
     private JPanel createPanel4() {
         JPanel panel = new JPanel(false);
         panel.setLayout(null);
-
-
+        panel.add(new TabbleSelectSMan(panel));
         return panel;
     }
     private JPanel createPanel5() {
