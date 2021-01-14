@@ -75,8 +75,7 @@ public class WinCustomer extends JPanel {
     private JPanel createPanel3() {
         JPanel panel = new JPanel(false);
         panel.setLayout(null);
-
-
+        panel.add(new TabbleMaiFang(panel, ID));
         return panel;
     }
     private JPanel createPanel4() {
