@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed47429c-ff22-4a78-be17-22e37d212c2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lxx/TabbleFenFangYuan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinAdmin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinAdmin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lxx/WinAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/WinAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/Contracts$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/Contracts$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/Contracts.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/Contracts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/Notice$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/Notice$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/Notice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/Notice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lxx/Contracts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/Contracts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lxx/Notice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/Notice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +59,9 @@
       <recent name="D:\A_User_2401\CodeStudy\JavaProjects\Java_XiangMu\Java_ErShouFang\src\syx" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WinAdmin">
-    <configuration name="Contracts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lxx.Contracts" />
+  <component name="RunManager" selected="Application.WinMain">
+    <configuration name="FenPeiFangYuan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lxx.FenPeiFangYuan" />
       <module name="Java_ErShouFang" />
       <extension name="coverage">
         <pattern>
@@ -70,8 +73,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FenPeiFangYuan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lxx.FenPeiFangYuan" />
+    <configuration name="Notice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lxx.Notice" />
       <module name="Java_ErShouFang" />
       <extension name="coverage">
         <pattern>
@@ -96,8 +99,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WinCustomer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lxx.WinCustomer" />
+    <configuration name="WinMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lxx.WinMain" />
       <module name="Java_ErShouFang" />
       <extension name="coverage">
         <pattern>
@@ -124,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WinMain" />
+        <item itemvalue="Application.Notice" />
         <item itemvalue="Application.WinAdmin" />
         <item itemvalue="Application.FenPeiFangYuan" />
         <item itemvalue="Application.WinSMan" />
-        <item itemvalue="Application.WinCustomer" />
-        <item itemvalue="Application.Contracts" />
       </list>
     </recent_temporary>
   </component>
