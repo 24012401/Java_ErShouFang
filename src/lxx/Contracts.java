@@ -155,6 +155,7 @@ public class Contracts extends JFrame implements ActionListener {
                 preparedStatement.setString(5, time);
                 preparedStatement.executeQuery();
                 JOptionPane.showMessageDialog(null, "添加成功！");
+                dispose();
             } catch (Exception exception) {
                 exception.printStackTrace();
             } finally {
@@ -172,7 +173,7 @@ public class Contracts extends JFrame implements ActionListener {
             Connection con = Link.getConnection();
             String str = "Select * from House where 房源ID = ?";
             PreparedStatement ps = con.prepareStatement(str);
-            ps.setString(1, textField1.getText());
+            ps.setString(1, textField2.getText());
             ResultSet rs = ps.executeQuery();
             if (! rs.next()) {
                 ok = false;

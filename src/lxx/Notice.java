@@ -130,13 +130,24 @@ public class Notice extends JFrame implements ActionListener {
         if (e.getSource() == button1 && ok) {
             try {
                 connection = Link.getConnection();
-                String str = "insert into Notice(买家ID, 房源ID, 看房时间) values(?,?,?)";
+                String str1 = "select 客户ID from House where 房源ID = ?";
+                PreparedStatement p = null;
+                p = connection.prepareStatement(str1, Statement.RETURN_GENERATED_KEYS);
+                p.setString(1 ,textField2.getText());
+                ResultSet rs = p.executeQuery();
+                String maiJiaID = null;
+                if (rs.next()) {
+                    maiJiaID = rs.getString("客户ID");
+                }
+
+                String str = "insert into Notice(买家ID, 卖家ID, 看房时间) values(?,?,?)";
                 preparedStatement = connection.prepareStatement(str, Statement.RETURN_GENERATED_KEYS);
                 preparedStatement.setString(1, textField1.getText());
-                preparedStatement.setString(2, textField2.getText());
+                preparedStatement.setString(2, maiJiaID);
                 preparedStatement.setString(3, time);
                 preparedStatement.executeQuery();
                 JOptionPane.showMessageDialog(null, "添加成功！");
+                dispose();
             } catch (Exception exception) {
                 exception.printStackTrace();
             } finally {
@@ -154,7 +165,7 @@ public class Notice extends JFrame implements ActionListener {
             Connection con = Link.getConnection();
             String str = "Select * from House where 房源ID = ?";
             PreparedStatement ps = con.prepareStatement(str);
-            ps.setString(1, textField1.getText());
+            ps.setString(1, textField2.getText());
             ResultSet rs = ps.executeQuery();
             if (! rs.next()) {
                 ok = false;
@@ -172,7 +183,7 @@ public class Notice extends JFrame implements ActionListener {
             Connection con = Link.getConnection();
             String str = "Select * from Customer where 客户ID = ?";
             PreparedStatement ps = con.prepareStatement(str);
-            ps.setString(1, textField2.getText());
+            ps.setString(1, textField1.getText());
             ResultSet rs = ps.executeQuery();
             if (! rs.next()) {
                 ok = false;
