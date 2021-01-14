@@ -46,7 +46,7 @@ public class ShenHeZhangHao extends JPanel implements ActionListener {
         button2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                textField1.setText("");
             }
         });
     }

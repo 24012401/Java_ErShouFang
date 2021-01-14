@@ -73,7 +73,7 @@ public class TabbleSManGeRenXinXi extends JPanel implements ActionListener {
 
         button1 = new JButton("修改");
         button1.setFont(new Font("宋体", Font.PLAIN, 20));
-        button2 = new JButton("取消");
+        button2 = new JButton("刷新");
         button2.setFont(new Font("宋体", Font.PLAIN, 20));
         panel7 = new JPanel(new FlowLayout(FlowLayout.CENTER));
         panel7.add(button1);

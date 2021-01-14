@@ -190,7 +190,7 @@ public class Contracts extends JFrame implements ActionListener {
             Connection con = Link.getConnection();
             String str = "Select * from Customer where 客户ID = ?";
             PreparedStatement ps = con.prepareStatement(str);
-            ps.setString(1, textField2.getText());
+            ps.setString(1, textField1.getText());
             ResultSet rs = ps.executeQuery();
             if (! rs.next()) {
                 ok = false;
@@ -236,7 +236,7 @@ public class Contracts extends JFrame implements ActionListener {
         contracts.setTitle("添加合同信息");
         contracts.setBounds(450, 200, 560, 420);
         contracts.setVisible(true);
-        contracts.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+        contracts.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     public static void main(String[] args) {
@@ -247,7 +247,7 @@ public class Contracts extends JFrame implements ActionListener {
                     contracts.setTitle("添加合同信息");
                     contracts.setBounds(450, 200, 560, 420);
                     contracts.setVisible(true);
-                    contracts.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+                    contracts.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);  //退出程序
                 } catch (Exception e) {
                     e. printStackTrace();
                 }
