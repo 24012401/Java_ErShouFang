@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ed47429c-ff22-4a78-be17-22e37d212c2a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/TabbleSManGeRenXinXi$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/TabbleSManGeRenXinXi$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/TabbleSManGeRenXinXi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/TabbleSManGeRenXinXi.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lxx/TabbleSManGeRenXinXi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/TabbleSManGeRenXinXi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zhw/view/SellerUpdateFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zhw/view/SellerUpdateFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zhw/view/SellerUpdateFrame.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/zhw/view/SellerUpdateFrame.jfd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -98,6 +98,7 @@ public class SellerUpdateFrame extends JFrame {
 
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
+        // Generated using JFormDesigner Evaluation license - Xiaoxia Liu
         label1 = new JLabel();
         sellerNameTXT = new JTextField();
         label2 = new JLabel();
@@ -118,7 +119,7 @@ public class SellerUpdateFrame extends JFrame {
         //======== this ========
         setTitle("\u4e1a\u52a1\u5458\u4fee\u6539");
         setResizable(false);
-        Container contentPane = getContentPane();
+        var contentPane = getContentPane();
         contentPane.setLayout(null);
 
         //---- label1 ----
@@ -191,7 +192,8 @@ public class SellerUpdateFrame extends JFrame {
         contentPane.add(label4);
         label4.setBounds(new Rectangle(new Point(245, 80), label4.getPreferredSize()));
 
-        { // compute preferred size
+        {
+            // compute preferred size
             Dimension preferredSize = new Dimension();
             for(int i = 0; i < contentPane.getComponentCount(); i++) {
                 Rectangle bounds = contentPane.getComponent(i).getBounds();
@@ -204,17 +206,18 @@ public class SellerUpdateFrame extends JFrame {
             contentPane.setMinimumSize(preferredSize);
             contentPane.setPreferredSize(preferredSize);
         }
-        setSize(481, 464);
+        setSize(505, 445);
         setLocationRelativeTo(getOwner());
 
         //---- buttonGroup1 ----
-        ButtonGroup buttonGroup1 = new ButtonGroup();
+        var buttonGroup1 = new ButtonGroup();
         buttonGroup1.add(man);
         buttonGroup1.add(woman);
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
+    // Generated using JFormDesigner Evaluation license - Xiaoxia Liu
     private JLabel label1;
     private JTextField sellerNameTXT;
     private JLabel label2;
