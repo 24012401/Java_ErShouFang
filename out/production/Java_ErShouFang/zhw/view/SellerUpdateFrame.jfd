@@ -111,20 +111,6 @@ new FormModel {
 				"y": 125
 				"width": 160
 			} )
-			add( new FormComponent( "javax.swing.JTextField" ) {
-				name: "sellerIDTXT"
-			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
-				"x": 310
-				"y": 80
-				"width": 130
-			} )
-			add( new FormComponent( "javax.swing.JLabel" ) {
-				name: "label4"
-				"text": "业务员ID"
-			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
-				"x": 245
-				"y": 80
-			} )
 		}, new FormLayoutConstraints( null ) {
 			"size": new java.awt.Dimension( 505, 445 )
 			"location": new java.awt.Point( 0, 0 )
