@@ -1,5 +1,7 @@
 package lxx;
 
+import zhw.view.SalesmanMainFrame;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -108,9 +110,8 @@ public class TabbleSManGeRenXinXi extends JPanel implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == button1) {
-
-
-
+            SalesmanMainFrame salesmanMainFrame = new SalesmanMainFrame();
+            salesmanMainFrame.setVisible(true);
         }
     }
 }
