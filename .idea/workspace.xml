@@ -2,55 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed47429c-ff22-4a78-be17-22e37d212c2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lxx/LuRuFangYuanXinXi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lxx/TabbleMaiFang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Java_ErShouFang.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java_ErShouFang.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinCustomer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/Information/InformBuyer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/Information/InformBuyer.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/Information/InformSeller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/Information/InformSeller.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/Information/InformUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/Information/InformUser.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/Information/form.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/SaleApplication/DoSaleApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/SaleApplication/House.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/SaleApplication/InsertDatabase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/SaleApplication/Link.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/SaleApplication/MyCommandListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/SaleApplication/SaleApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/SaleApplication/SaleApplication.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/SaleApplication/SaleApplicationListen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/SaleApplication/SaleApplicationNotice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/SaleApplication/SaleApplicationNotice.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/SaleApplication/SaleApplicationNoticeListen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/SaleApplication/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/SaleApplication/form.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/syx/resorce/form.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lxx/WinCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/WinCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/CurriculumDesign.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/Information/InformBuyer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/Information/InformBuyer.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/Information/InformSeller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/Information/InformSeller.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/Information/InformUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/Information/InformUser.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/Information/form.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/SaleApplication/DoSaleApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/SaleApplication/House.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/SaleApplication/InsertDatabase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/SaleApplication/Link.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/SaleApplication/MyCommandListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/SaleApplication/SaleApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/SaleApplication/SaleApplication.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/SaleApplication/SaleApplicationListen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/SaleApplication/SaleApplicationNotice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/SaleApplication/SaleApplicationNotice.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/SaleApplication/SaleApplicationNoticeListen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/SaleApplication/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/SaleApplication/form.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/syx/resorce/form.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zhw/view/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zhw/view/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +54,7 @@
       <recent name="D:\A_User_2401\CodeStudy\JavaProjects\Java_XiangMu\Java_ErShouFang\src\syx" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WinCustomer">
+  <component name="RunManager" selected="Application.WinSMan">
     <configuration name="DoSaleApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="syx.SaleApplication.DoSaleApplication" />
       <module name="Java_ErShouFang" />
@@ -169,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WinSMan" />
         <item itemvalue="Application.WinCustomer" />
         <item itemvalue="Application.LuRuFangYuanXinXi" />
         <item itemvalue="Application.DoSaleApplication" />
         <item itemvalue="Application.SaleApplicationNotice" />
-        <item itemvalue="Application.WinSMan" />
       </list>
     </recent_temporary>
   </component>
