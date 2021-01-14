@@ -22,6 +22,7 @@ public class WinAdmin extends JPanel {
         Component panel2 = createPanel2(); // 查询客户信息
         JPanel panel3 = createPanel3(); // 查询业务员信息
         JPanel panel4 = createPanel4(); // 通过业务员账户申请
+        JPanel panel7 = createPanel7(); // 给业务员分配房源
         JPanel panel5 = createPanel5(); // 关于
         JPanel panel6 = createPanel6(frame); // 退出登录
 
@@ -30,9 +31,17 @@ public class WinAdmin extends JPanel {
         tabbedPane1.addTab("查询客户", panel2);
         tabbedPane1.addTab("查询业务员", panel3);
         tabbedPane1.addTab("授权业务员账号", panel4);
+        tabbedPane1.addTab("为业务员分配房源", panel7);
         tabbedPane1.addTab("关于", panel5);
         tabbedPane1.addTab("退出登录", panel6);
         this.add(tabbedPane1);
+    }
+
+    private JPanel createPanel7() {
+        JPanel panel = new JPanel(false);
+        panel.setLayout(null);
+        panel.add(new TabbleFenFangYuan(panel));
+        return panel;
     }
 
     private JPanel createPanel(JFrame frame) throws Exception {
