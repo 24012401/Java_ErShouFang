@@ -154,7 +154,7 @@ public class WinSelectCustomer extends JFrame {
                     winUpdateCustomer.setTitle("修改客户信息");
                     winUpdateCustomer.setBounds(400, 200, 450, 350);
                     winUpdateCustomer.setVisible(true);
-                    winUpdateCustomer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+                    winUpdateCustomer.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);  //关闭窗口
                 } catch (SQLException throwables) {
                     throwables.printStackTrace();
                 }

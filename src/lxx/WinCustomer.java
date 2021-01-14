@@ -69,7 +69,7 @@ public class WinCustomer extends JPanel {
     private Component createPanel2() {
         JPanel panel = new JPanel(false);
         panel.setLayout(null);
-        panel.add(new TabbleShenQingKanFang(panel));
+        panel.add(new TabbleShenQingKanFang(panel, ID));
         return panel;
     }
     private JPanel createPanel3() {
