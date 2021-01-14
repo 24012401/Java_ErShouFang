@@ -4,11 +4,10 @@
 
 package zhw.view;
 
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.*;
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.table.*;
 
 /**
  * @auther 张鸿伟
@@ -69,6 +68,11 @@ public class SalesmanMainFrame extends JFrame {
         // TODO add your code here
     }
 
+    private void menuItem2ActionPerformed(ActionEvent e) {
+        // TODO add your code here
+        new SellerUpdateFrame().setVisible(true);
+    }
+
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         menuBar2 = new JMenuBar();
@@ -81,6 +85,8 @@ public class SalesmanMainFrame extends JFrame {
         menu1 = new JMenu();
         menuItem1 = new JMenuItem();
         menuItem4 = new JMenuItem();
+        menu2 = new JMenu();
+        menuItem2 = new JMenuItem();
         panel1 = new JPanel();
         label1 = new JLabel();
         houseNameTXT = new JTextField();
@@ -175,6 +181,17 @@ public class SalesmanMainFrame extends JFrame {
                 menu1.add(menuItem4);
             }
             menuBar2.add(menu1);
+
+            //======== menu2 ========
+            {
+                menu2.setText("\u4fee\u6539");
+
+                //---- menuItem2 ----
+                menuItem2.setText("\u4fee\u6539\u4fe1\u606f");
+                menuItem2.addActionListener(e -> menuItem2ActionPerformed(e));
+                menu2.add(menuItem2);
+            }
+            menuBar2.add(menu2);
         }
         setJMenuBar(menuBar2);
 
@@ -384,6 +401,8 @@ public class SalesmanMainFrame extends JFrame {
     private JMenu menu1;
     private JMenuItem menuItem1;
     private JMenuItem menuItem4;
+    private JMenu menu2;
+    private JMenuItem menuItem2;
     private JPanel panel1;
     private JLabel label1;
     private JTextField houseNameTXT;

@@ -16,7 +16,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 /**
- * @author Brainrain
+ * @author 张鸿伟
  */
 public class SellerUpdateFrame extends JFrame {
     public SellerUpdateFrame() {
@@ -24,7 +24,6 @@ public class SellerUpdateFrame extends JFrame {
     }
 
     private void resetValue() {
-        this.sellerIDTXT.setText("");
         this.sellerNameTXT.setText("");
         this.telephoneTXT.setText("");
         this.numberTXT.setText("");
@@ -33,12 +32,6 @@ public class SellerUpdateFrame extends JFrame {
     }
     private void button1ActionPerformed(ActionEvent e) {
         // TODO add your code here
-        String sellerId = sellerIDTXT.getText();
-        sellerId = sellerId.trim();
-        if (StringUtil.isEmpty(sellerId)) {
-            JOptionPane.showMessageDialog(null, "请选择要修改的记录");
-            return;
-        }
         String sellerName = this.sellerNameTXT.getText();
         String  sellerTelphone= this.telephoneTXT.getText();
         String sellerNumber = this.numberTXT.getText();
@@ -65,8 +58,7 @@ public class SellerUpdateFrame extends JFrame {
             this.man.setSelected(false);
         }
         DbUtil dbUtil = new DbUtil();
-        Integer sellerInteger = Integer.valueOf(sellerId);
-        int sellerIdInt = sellerInteger.intValue();
+        int sellerIdInt = LoginTest.getCurrentUserId();
         Seller seller = new Seller(sellerIdInt,sellerName,sellerSex,sellerTelphone,sellerNumber,sellerBrief);
         Connection conn = null;
         try {
@@ -112,8 +104,6 @@ public class SellerUpdateFrame extends JFrame {
         button1 = new JButton();
         button2 = new JButton();
         telephoneTXT = new JTextField();
-        sellerIDTXT = new JTextField();
-        label4 = new JLabel();
 
         //======== this ========
         setTitle("\u4e1a\u52a1\u5458\u4fee\u6539");
@@ -183,13 +173,6 @@ public class SellerUpdateFrame extends JFrame {
         button2.setBounds(270, 360, 70, 30);
         contentPane.add(telephoneTXT);
         telephoneTXT.setBounds(120, 125, 160, telephoneTXT.getPreferredSize().height);
-        contentPane.add(sellerIDTXT);
-        sellerIDTXT.setBounds(310, 80, 130, sellerIDTXT.getPreferredSize().height);
-
-        //---- label4 ----
-        label4.setText("\u4e1a\u52a1\u5458ID");
-        contentPane.add(label4);
-        label4.setBounds(new Rectangle(new Point(245, 80), label4.getPreferredSize()));
 
         { // compute preferred size
             Dimension preferredSize = new Dimension();
@@ -229,7 +212,5 @@ public class SellerUpdateFrame extends JFrame {
     private JButton button1;
     private JButton button2;
     private JTextField telephoneTXT;
-    private JTextField sellerIDTXT;
-    private JLabel label4;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 }

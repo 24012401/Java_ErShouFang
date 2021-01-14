@@ -37,6 +37,9 @@ public class LoginTest extends JFrame {
     private DbUtil dbUtil = new DbUtil();
     private UserDao userDao = new UserDao();
 
+    private static int currentUserId;
+
+
     private void comboBox1ItemStateChanged(ItemEvent e) {
         // TODO add your code here
     }
@@ -120,7 +123,9 @@ public class LoginTest extends JFrame {
             }
         }
     }
-
+    public static int getCurrentUserId(){
+        return currentUserId;
+    }
     private void comboBox1ActionPerformed(ActionEvent e) {
         // TODO add your code here
     }
