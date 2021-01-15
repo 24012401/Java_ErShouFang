@@ -221,7 +221,7 @@ public class WinSelectCustomer extends JFrame {
         updateCostomer.setTitle("查询客户信息");
         updateCostomer.setBounds(450, 200, 800, 500);
         updateCostomer.setVisible(true);
-        updateCostomer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+        updateCostomer.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);  //退出程序
     }
 
     public static void main(String[] args) {
@@ -232,7 +232,7 @@ public class WinSelectCustomer extends JFrame {
                     updateCostomer.setTitle("查询客户信息");
                     updateCostomer.setBounds(450, 200, 800, 500);
                     updateCostomer.setVisible(true);
-                    updateCostomer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //退出程序
+                    updateCostomer.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);  //退出程序
                 } catch (Exception e) {
                     e. printStackTrace();
                 }
