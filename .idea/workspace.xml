@@ -3,12 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="ed47429c-ff22-4a78-be17-22e37d212c2a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/Contracts$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/Contracts$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/Contracts.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/Contracts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/Notice$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/Notice$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/Notice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/Notice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lxx/Contracts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/Contracts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lxx/Notice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/Notice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinAdmin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinAdmin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinCustomer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinSMan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinSMan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinSelectCustomer$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinSelectCustomer$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinSelectCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_ErShouFang/lxx/WinSelectCustomer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lxx/WinAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/WinAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lxx/WinCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/WinCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lxx/WinSMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/WinSMan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lxx/WinSelectCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lxx/WinSelectCustomer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,12 +63,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.WinMain">
-    <configuration name="FenPeiFangYuan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lxx.FenPeiFangYuan" />
+    <configuration name="Center" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fhy.Center" />
       <module name="Java_ErShouFang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lxx.*" />
+          <option name="PATTERN" value="fhy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,8 +102,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WinMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lxx.WinMain" />
+    <configuration name="WinCustomer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lxx.WinCustomer" />
       <module name="Java_ErShouFang" />
       <extension name="coverage">
         <pattern>
@@ -112,8 +115,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WinSMan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lxx.WinSMan" />
+    <configuration name="WinMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lxx.WinMain" />
       <module name="Java_ErShouFang" />
       <extension name="coverage">
         <pattern>
@@ -128,10 +131,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.WinMain" />
-        <item itemvalue="Application.Notice" />
+        <item itemvalue="Application.Center" />
         <item itemvalue="Application.WinAdmin" />
-        <item itemvalue="Application.FenPeiFangYuan" />
-        <item itemvalue="Application.WinSMan" />
+        <item itemvalue="Application.WinCustomer" />
+        <item itemvalue="Application.Notice" />
       </list>
     </recent_temporary>
   </component>

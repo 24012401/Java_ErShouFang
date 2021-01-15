@@ -1,7 +1,10 @@
 package lxx;
 
+import fhy.Center;
+
 import javax.swing.*;
 import java.awt.*;
+import java.sql.SQLException;
 
 /**
  * author: 刘晓霞
@@ -41,10 +44,11 @@ public class WinSMan extends JPanel {
         panel.add(new TabbleSManGeRenXinXi(panel, ID, frame));
         return panel;
     }
-    private JPanel createPanel1() {
-        JPanel panel = new JPanel(false);
+    private JPanel createPanel1() throws SQLException {
+        JPanel panel ;
+        Center cen=new Center();
+        panel=cen.constructInPanel("全部","",1);
         panel.setLayout(null);
-        panel.add(new TabbleSelectHouse(panel));
         return panel;
     }
     private Component createPanel2() throws Exception {

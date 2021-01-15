@@ -1,7 +1,10 @@
 package lxx;
 
+import fhy.Center;
+
 import javax.swing.*;
 import java.awt.*;
+import java.sql.SQLException;
 
 /**
  * author: 刘晓霞
@@ -60,10 +63,11 @@ public class WinCustomer extends JPanel {
         panel.add(new TabbleCustomerGeRenXinXi(panel, ID, frame));
         return panel;
     }
-    private JPanel createPanel1() {
-        JPanel panel = new JPanel(false);
+    private JPanel createPanel1() throws SQLException {
+        JPanel panel ;
+        Center cen = new Center();
+        panel=cen.constructInPanel("全部","",0);
         panel.setLayout(null);
-
         return panel;
     }
     private Component createPanel2() {
